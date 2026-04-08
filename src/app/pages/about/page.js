@@ -1,6 +1,7 @@
 import Profile from "@/app/components/Profile";
 import Experience from "@/app/components/Experience";
 import Education from "@/app/components/Education";
+
 import Link from "next/link";
 import {
   ArrowRight,
@@ -11,78 +12,121 @@ import {
   ExternalLink,
 } from "lucide-react";
 
-const skillCategories = [
-  {
-    title: "Languages",
-    skills: ["Python", "Java", "JavaScript", "TypeScript", "C", "C++"],
-  },
-  {
-    title: "Web & Frameworks",
-    skills: [
-      "React.js",
-      "Next.js",
-      "Django",
-      "Node.js",
-      "Tailwind CSS",
-      "HTML",
-      "CSS",
-    ],
-  },
-  {
-    title: "AI & Machine Learning",
-    skills: [
-      "OpenAI",
-      "Agentic AI",
-      "scikit-learn",
-      "TensorFlow",
-      "XGBoost",
-      "SHAP",
-      "Word2Vec",
-    ],
-  },
-  {
-    title: "Databases",
-    skills: ["PostgreSQL", "MySQL", "Firebase Firestore", "NoSQL"],
-  },
-  {
-    title: "Cloud & DevOps",
-    skills: ["AWS", "Docker", "CI/CD", "Firebase"],
-  },
-  {
-    title: "Testing & Tools",
-    skills: [
-      "PyTest",
-      "Jest",
-      "Selenium",
-      "Appium",
-      "Git",
-      "GitHub",
-      "VS Code",
-      "IntelliJ IDEA",
-    ],
-  },
-];
-
+const skillsData = {
+  Languages: ["Python", "JavaScript", "C", "C++", "Java", "R", "SQL"],
+  "Web & Frameworks": [
+    "React.js",
+    "Next.js",
+    "Node.js",
+    "Express.js",
+    "Django",
+    "HTML",
+    "CSS",
+    "Tailwind CSS",
+  ],
+  "AI & Machine Learning": [
+    "TensorFlow",
+    "PyTorch",
+    "Scikit-learn",
+    "Deep Learning",
+    "NLP",
+    "RAG",
+    "Agentic AI",
+    "GAN",
+    "Transformers",
+    "Ai Automation",
+    "GBDT",
+    "Supervised",
+    "Unsupervised",
+    "Reinforcement",
+  ],
+  "Data & Analytics": [
+    "Pandas",
+    "NumPy",
+    "Matplotlib",
+    "Seaborn",
+    "Plotly",
+    "Power BI",
+    "Tableau",
+    "Excel",
+    "Looker Studio",
+  ],
+  "Databases & Big Data": [
+    "MySQL",
+    "PostgreSQL",
+    "MongoDB",
+    "BigQuery",
+    "Snowflake",
+    "Firebase Firestore",
+  ],
+  "Cloud & DevOps": ["AWS", "Docker", "Kubernetes", "CI/CD", "Git", "GitHub"],
+  "Data Engineering": [
+    "ETL",
+    "Web Scraping",
+    "Data Cleaning",
+    "Data Warehouse",
+  ],
+  "Statistics & ML Concepts": [
+    "EDA",
+    "A/B Testing",
+    "Time Series",
+    "Regression",
+    "K-Means",
+    "PCA",
+    "Bias-Variance",
+    "F1 Score",
+  ],
+};
 const certifications = [
   {
-    name: "Problem Solving",
-    issuer: "HackerRank",
-    link: "https://www.hackerrank.com/certificates/iframe/0a7e6d1c0e5a",
+    name: "Data Analytics",
+    issuer: "Interactive Cares",
+    link: "https://drive.google.com/file/d/1V9-Iqk1DG4iwvmYVZ31XUI98TTYQ1Urx/view?usp=drive_link",
+  },
+  {
+    name: "Data Science & Machine Learning ",
+    issuer: "Interactive Cares",
+    link: "https://drive.google.com/file/d/1LxDQ6HaH1Jiy0qEM1njYSj9RdHJmv5_M/view?usp=drive_link",
+  },
+  {
+    name: "Data Analyst",
+    issuer: "Tutorials Point Bangladesh",
+    link: "https://drive.google.com/file/d/1j0jBb9eF0soJWGT6-v5wxTTmajo_IC9O/view?usp=drive_link",
+  },
+  {
+    name: "Applied Data Science with Python",
+    issuer: "Simplilearn",
+    link: "https://drive.google.com/file/d/1OS5NmDzFltee9YY6BtN_go2RRrppxhsq/view?usp=drive_link",
+  },
+  {
+    name: "Exploring Data Transformation",
+    issuer: "Google Cloud",
+    link: "https://drive.google.com/file/d/1uS-LCzAaXU7OuwhGqcNHGTXV-22bPkOm/view?usp=drive_link",
   },
   {
     name: "Python Basic",
     issuer: "HackerRank",
-    link: "https://www.hackerrank.com",
+    link: "https://drive.google.com/file/d/1BG57TDSjfzdceskgz-061hHSzvmPuQGE/view?usp=drive_link",
   },
   {
-    name: "Java Basic",
+    name: "SQL(Beginner to Advanced)",
     issuer: "HackerRank",
-    link: "https://www.hackerrank.com",
+    link: "https://drive.google.com/file/d/1GNSIH51MMPaR19NQ4s0Dc-sNu2c3r1ZU/view?usp=drive_link",
   },
   {
-    name: "React Fundamentals",
-    issuer: "Coursera",
-    link: "https://www.coursera.org",
+    name: "Pandas",
+    issuer: "Kaggle",
+    link: "https://drive.google.com/file/d/1-dx9NQBNCUxs5nHNuSk3WgpOv1pkJmGa/view?usp=drive_link",
+  },
+  {
+    name: "TREE PLANTATION INITIATIVE",
+    issuer: "MUSSC",
+    link: "https://drive.google.com/file/d/18uMI_1cMdHz4Q1dc6QCEVFcGMBJwziHA/view?usp=drive_link",
+  },
+  {
+    name: "Idea Sharing 2020",
+    issuer: "Hours of Code",
+    link: "https://drive.google.com/file/d/1lA3kaNW3XW8WWytLCr9wSS0qK8BeJ-zK/view?usp=drive_link",
   },
 ];
 
@@ -166,8 +210,8 @@ export default function AboutPage() {
             Data Scientist and AI/ML Engineer with 3+ years of experience
             delivering data-driven solutions, predictive models, and AI-powered
             systems. Holds a{" "}
-            <strong>B.Sc. foundation in Data Science and AI</strong>{" "}
-            from Metropolitan University, Bangladesh.
+            <strong>B.Sc. foundation in Data Science and AI</strong> from
+            Metropolitan University, Bangladesh.
           </p>
           <p>
             Author of peer-reviewed{" "}
@@ -234,20 +278,22 @@ export default function AboutPage() {
 
       {/* ── Technical Skills ── */}
       <section className="max-w-5xl mx-auto px-6 py-12 border-t border-gray-100">
-        <h2 className="text-2xl font-light text-gray-900 border-b border-gray-200 pb-3 mb-8">
+        <h2 className="text-3xl font-bold mb-10 text-gray-800">
           Technical Skills
         </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {skillCategories.map((cat, i) => (
-            <div key={i}>
-              <p className="text-xs font-medium tracking-widest uppercase text-gray-400 mb-3">
-                {cat.title}
-              </p>
+
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {Object.entries(skillsData).map(([category, skills]) => (
+            <div key={category}>
+              <h3 className="text-sm font-semibold text-gray-500 uppercase mb-4 tracking-wide">
+                {category}
+              </h3>
+
               <div className="flex flex-wrap gap-2">
-                {cat.skills.map((skill, j) => (
+                {skills.map((skill) => (
                   <span
-                    key={j}
-                    className="px-3 py-1 text-sm bg-gray-50 border border-gray-200 text-gray-700 rounded hover:border-blue-300 hover:text-blue-600 transition-colors duration-200"
+                    key={skill}
+                    className="px-3 py-1 text-sm bg-gray-100 border border-gray-300 rounded-md hover:bg-gray-200 transition"
                   >
                     {skill}
                   </span>
@@ -257,6 +303,7 @@ export default function AboutPage() {
           ))}
         </div>
       </section>
+
       {/* ── Research highlight ── */}
 
       <section className="bg-slate-50 border-b border-gray-100">
@@ -327,31 +374,59 @@ export default function AboutPage() {
       </section>
 
       {/* ── CTA ── */}
-      <section className="bg-slate-50 border-t border-gray-200">
-        <div className="max-w-5xl mx-auto px-6 py-14 flex flex-col sm:flex-row items-center justify-between gap-6">
-          <div>
-            <h3 className="text-xl font-light text-gray-900 mb-1">
-              Interested in working together?
-            </h3>
-            <p className="text-sm text-gray-600">
-              Open to full-time roles, freelance projects, and research
-              collaborations.
-            </p>
-          </div>
-          <div className="flex gap-3 shrink-0">
-            <Link
-              href="/pages/contact"
-              className="inline-flex items-center gap-2 bg-blue-600 text-white px-6 py-3 text-sm font-medium hover:bg-blue-700 transition-colors duration-200"
+      <section
+        id="contact"
+        className="bg-slate-50 border-t relative overflow-hidden bg-gradient-to-br from-sky-900 to-sky-800 py-20 px-6 text-center"
+      >
+        {/* Background circles */}
+        <div className="absolute -top-20 -right-20 w-80 h-80 rounded-full border border-white/10" />
+        <div className="absolute -bottom-16 -left-16 w-60 h-60 rounded-full border border-white/10" />
+
+        <div className="relative z-10 max-w-2xl mx-auto">
+          {/* Heading */}
+          <h2 className="text-[clamp(1.6rem,3vw,2.2rem)] font-extrabold text-white mb-3">
+            Interested in working together?
+          </h2>
+
+          {/* Description */}
+          <p className="text-sky-200 text-sm leading-relaxed mb-8">
+            Open to full-time roles, freelance projects, and research
+            collaborations.
+          </p>
+
+          {/* Buttons */}
+          <div className="flex flex-wrap justify-center gap-3 mb-7">
+            <a
+              href="mailto:nakibuddin33@gmail.com"
+              className="px-6 py-2.5 rounded-full bg-white text-sky-900 font-bold text-sm shadow-md hover:shadow-lg transition"
             >
-              Contact Me <ArrowRight className="w-4 h-4" />
-            </Link>
-            <Link
-              href="/pages/publications"
-              className="inline-flex items-center gap-2 border border-gray-300 text-gray-700 px-6 py-3 text-sm font-medium hover:border-blue-600 hover:text-blue-600 transition-colors duration-200"
+              Contact Me
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/nakib33"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-6 py-2.5 rounded-full border border-white/40 text-sky-100 font-medium text-sm hover:bg-white/10 transition"
             >
-              Publications
-            </Link>
+              LinkedIn
+            </a>
+
+            <a
+              href="https://github.com/nakib33"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-6 py-2.5 rounded-full border border-white/40 text-sky-100 font-medium text-sm hover:bg-white/10 transition"
+            >
+              GitHub
+            </a>
           </div>
+
+          {/* Footer Info */}
+          <p className="text-sky-300 text-ls">
+            📞 +880 1646-819354 &nbsp;·&nbsp; ✉ nakibuddin33@gmail.com
+            &nbsp;·&nbsp; linkedin.com/in/nakib33
+          </p>
         </div>
       </section>
     </div>
