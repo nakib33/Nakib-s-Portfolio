@@ -19,43 +19,44 @@ const Experience = () => {
         },
         {
             icon: <BookUser className="w-6 h-6 text-blue-600" />,
-            title: "Coding Mentor",
-            company: "Indiana Wesleyan University",
-            type: "Part Time",
-            location: "Merrillville, USA",
-            period: "Jan 2025 – Feb 2026",
+            title: "Web Developer and CRM Administrator",
+            company: "AnTech Innovation & Global Education Care",
+            type: "Full Time",
+            location: "Sylhet, Bangladesh",
+            period: "July 2023 – December 2024",
             responsibilities: [
-                "Mentored junior students in Python, Java, C, and C++, strengthening coding and problem-solving skills.",
-                "Guided application of OOP principles for clean, maintainable code.",
-                "Assisted in developing and improving small projects, reinforcing software design best practices."
+                "Design, build, and optimize responsive websites using modern web technologies.",
+                "Manage, customize, and maintain CRM systems to enhance user experience and efficiency.",
+                "Ensure data integrity, automate workflows, and generate reports for business insights.  ",
+                "Provide support, troubleshoot issues, and train users on CRM and web applications."
             ]
         },
         {
             icon: <Shield className="w-6 h-6 text-blue-600" />,
-            title: "Software Engineer",
-            company: "Inverse AI",
-            type: "Full Time",
-            location: "Sylhet, Bangladesh",
-            period: "Nov 2021 – Dec 2022",
+            title: "Machine Learning Engineer",
+            company: "DataSoft Systems Bangladesh Limited",
+            type: "Casual",
+            location: "Remote",
+            period: "June 2023 – November 2024",
             responsibilities: [
-                "Designed automated test scripts with Python, OOP, and PyTest, improving coverage and reliability.",
-                "Built and maintained API and mobile automation frameworks using Appium.",
-                "Performed functional, regression, and integration testing across web and mobile platforms.",
-                "Collaborated in Agile sprints, reporting defects and validating fixes for on-time releases."
+                "Developed a Stock Trend Prediction model integrating news sentiment analysis with financial data for trend forecasting. ",
+                "Implemented NLP techniques (word embedding, sentiment classification) to analyze financial news impact on stock movements. ",
+                "Utilized Scikit-learn and ensemble learning models to enhance prediction accuracy, with insights visualized.",
+                "Collaborated closely with project management team through weekly meetings to discuss project progress, challenges, mitigation strategies focusing continuous improvement."
             ]
         },
         {
             icon: <Shield className="w-6 h-6 text-blue-600" />,
-            title: "Software Engineer",
-            company: "Inverse AI",
+            title: "IT Instructor and IT Support Technician",
+            company: "UCEP BANGLADESH",
             type: "Full Time",
             location: "Sylhet, Bangladesh",
-            period: "Nov 2021 – Dec 2022",
+            period: "June 2022 – April 2023",
             responsibilities: [
-                "Designed automated test scripts with Python, OOP, and PyTest, improving coverage and reliability.",
-                "Built and maintained API and mobile automation frameworks using Appium.",
-                "Performed functional, regression, and integration testing across web and mobile platforms.",
-                "Collaborated in Agile sprints, reporting defects and validating fixes for on-time releases."
+                "Diagnose and resolve hardware, software, and network issues.",
+                "Instruct and mentor school & diploma students in IT-related subjects.",
+                "Conduct training sessions on various IT skills for students.",
+                "Equip students with ICT skills to build careers locally and abroad "
             ]
         },
     ];

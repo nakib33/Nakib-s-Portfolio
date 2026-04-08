@@ -158,16 +158,16 @@ export default function AboutPage() {
 
       {/* ── Professional Summary ── */}
       <section className="max-w-5xl mx-auto px-6 py-12 border-b border-gray-100">
-        <h2 className="text-2xl font-light text-gray-900 border-b border-gray-200 pb-3 mb-6">
+        <h2 className="text-2xl font-light text-gray-900 border-b border-sky-950 pb-3 mb-6">
           Professional Summary
         </h2>
         <div className="max-w-3xl space-y-4 text-gray-700 leading-relaxed text-base">
           <p>
-            Full-Stack Software Engineer and AI/ML Researcher with 3+ years of
-            experience designing and deploying scalable web applications and
-            production-grade AI systems. Holds an{" "}
-            <strong>M.Sc. in Artificial Intelligence (GPA 4.0)</strong> from
-            Indiana Wesleyan University, USA.
+            Data Scientist and AI/ML Engineer with 3+ years of experience
+            delivering data-driven solutions, predictive models, and AI-powered
+            systems. Holds a{" "}
+            <strong>B.Sc. foundation in Data Science and AI</strong>{" "}
+            from Metropolitan University, Bangladesh.
           </p>
           <p>
             Author of peer-reviewed{" "}
@@ -177,26 +177,26 @@ export default function AboutPage() {
             >
               research publications
             </Link>{" "}
-            in machine learning, NLP, and applied AI — including work on
-            recruitment fraud detection (XGBoost, 99.44% accuracy), NYC housing
-            affordability forecasting, exoplanet classification, and maternal
-            health risk prediction using ensemble learning and SHAP
-            explainability.
+            in Machine Learning, NLP, and applied AI — including projects on
+            education analytics, predictive modeling, and social impact
+            solutions using ensemble learning, SHAP explainability, and advanced
+            ML algorithms.
           </p>
           <p>
-            Proficient in Python, Java, JavaScript, TypeScript, Django,
-            React.js, Next.js, Node.js, AWS, Docker, PostgreSQL, and CI/CD.
-            Experienced with TensorFlow, scikit-learn, XGBoost, BERT, OpenAI
-            APIs, and Agentic AI systems. Strong foundation in OOP, data
-            structures, and algorithms with 1,000+ coding problems solved.
-            Maintains 50+{" "}
+            Proficient in Python, R, SQL, TensorFlow, PyTorch, scikit-learn, and
+            Power BI. Experienced in NLP, data visualization, statistical
+            modeling, and building scalable analytical systems. Strong
+            foundation in OOP, algorithms, and data structures, with hands-on
+            experience developing impactful research and industry projects.
+            Maintains{" "}
             <Link
               href="/pages/artifacts"
               className="text-blue-600 hover:underline font-medium"
             >
               open-source projects
             </Link>
-            . Open to relocation.
+            . Committed to continuous learning, innovation, and applying AI for
+            real-world impact.
           </p>
         </div>
       </section>
@@ -257,9 +257,9 @@ export default function AboutPage() {
           ))}
         </div>
       </section>
-       {/* ── Research highlight ── */}
+      {/* ── Research highlight ── */}
 
-       <section className="bg-slate-50 border-b border-gray-100">
+      <section className="bg-slate-50 border-b border-gray-100">
         <br /> <br />
         <div className="max-w-5xl mx-auto px-4">
           <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
