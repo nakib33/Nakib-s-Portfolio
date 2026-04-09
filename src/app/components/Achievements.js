@@ -6,26 +6,32 @@ const Achievements = () => {
         {
             icon: <Trophy className="w-6 h-6 text-blue-600" />,
             title: "Competitive Programming",
-            description: "Solved over 500+ problems on LeetCode and CodeForces, demonstrating strong algorithmic problem-solving skills and proficiency in data structures.",
-            highlight: "1000+ Coding Challenges Solved"
+            description: "Solved 300+ algorithmic problems across multiple platforms, demonstrating strong proficiency in data structures and problem-solving. Actively participated in 9 competitive programming contests, showcasing consistency, analytical thinking, and performance under pressure.",
+            highlight: "300+ Coding Challenges Solved"
         },
         {
             icon: <University className="w-6 h-6 text-blue-600" />,
-            title: "Indiana Wesleyan University",
-            description: "Computer Science student at Indiana Wesleyan University, pursuing advanced knowledge in software engineering and technology.",
+            title: "Metropolitan University",
+            description: "Computer Science student at Indiana Metropolitan University, pursuing advanced knowledge in software engineering and technology.",
             highlight: "Dedicated Computer Science Student"
         },
         {
             icon: <Code className="w-6 h-6 text-blue-600" />,
             title: "Open Source Contributions",
-            description: "Active contributor to open-source projects, showcasing collaborative skills and commitment to the developer community.",
+            description: "Active contributor to open-source initiatives, demonstrating strong collaboration skills, code quality, and a consistent commitment to community-driven development.",
             highlight: "Multiple Repository Contributions"
+        },
+        {
+            icon: <Trophy className="w-6 h-6 text-blue-600" />,
+            title: "Idea Sharing 2020",
+            description: "Awarded First Place in the Artificial Intelligence Innovation Challenge (Idea Sharing 2020) at Metropolitan University, organized by Hours of Code. Recognized for exceptional creativity, innovative thinking, and impactful contributions in the field of Artificial Intelligence.",
+            highlight: "First Position"
         },
         {
             icon: <Star className="w-6 h-6 text-blue-600" />,
             title: "Machine Learning Projects",
             description: "Developed innovative machine learning projects, including AI-driven applications that solve real-world problems.",
-            highlight: "Innovative AI Solutions"
+            highlight: "DataSoft Bangladesh"
         },
         {
             icon: <BookCheck className="w-6 h-6 text-blue-600" />,
