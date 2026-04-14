@@ -53,7 +53,7 @@ const publications = [{
     year: 2026,
     venue: "Q1",
     venueShort: "2026",
-    category: "Botanic Disease",
+    category: "Machine Learning",
     abstract:
         "This research introduces CV-Mamba, a deep learning pipeline designed to automatically detect and classify mango leaf diseases. By combining Gated CNN transfer learning with perceptual hash-based deduplication and leakage-free data partitioning, the system delivers accurate, reliable disease diagnosis — helping farmers and agricultural experts protect mango crops more efficiently.",
     pdfLink: null,
