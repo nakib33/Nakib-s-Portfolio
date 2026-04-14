@@ -6,7 +6,7 @@ import Link from 'next/link';
 const publications = [{
     title: "Enhancing Online Recruitment Fraud Detection: A Comparative Analysis of Gradient Boosting and Transformer Architectures Under Severe Class Imbalance",
     authors: ["Nakib Uddin Ahmed"],
-    year: 2024,
+    year: 2026,
     venue: "International Journal of Computer Applications",
     venueShort: "IJCA 2024",
     category: "Machine Learning",
@@ -21,7 +21,7 @@ const publications = [{
 {
     title: "Predicting Housing Affordability in New York City: A Neighborhood-Level Machine Learning Analysis Across 239 NTAs (2012–2022)",
     authors: ["Nakib Uddin Ahmed"],
-    year: 2025,
+    year: 2026,
     venue: "Springer Nature",
     venueShort: "ASAP 2025",
     category: "Machine Learning",
@@ -48,9 +48,23 @@ const publications = [{
     pdfLink: "/papers/HISC-S-26-00819.pdf",
 },
 {
+    title: "CV-Mamba: Gated CNN Transfer Learning for Mango Leaf Disease Detection with pHash-Based Deduplication and Leakage-Free Partitioning",
+    authors: ["Nakib Uddin Ahmed"],
+    year: 2026,
+    venue: "Q1",
+    venueShort: "2026",
+    category: "Botanic Disease",
+    abstract:
+        "This research introduces CV-Mamba, a deep learning pipeline designed to automatically detect and classify mango leaf diseases. By combining Gated CNN transfer learning with perceptual hash-based deduplication and leakage-free data partitioning, the system delivers accurate, reliable disease diagnosis — helping farmers and agricultural experts protect mango crops more efficiently.",
+    pdfLink: null,
+    status: "Pending",
+    keywords: ["Botanic", "Disease", "CV-Mamba", "CNN"],
+    pdfLink: "/papers/geography.pdf",
+},
+{
     title: "GeoSHAP: An Explainable AI Framework for Multi-Topic Chronic Disease Burden Prediction Across U.S. Geographic and Demographic Strata",
     authors: ["Nakib Uddin Ahmed"],
-    year: 2025,
+    year: 2026,
     venue: "Springer/IEEE",
     venueShort: "2025",
     category: "Healthcare AI",
@@ -64,7 +78,7 @@ const publications = [{
 {
     title: "ClimateXAI: An Explainable Machine Learning Framework for Census-Tract-Level Climate Displacement Risk Prediction Across U.S. Cities",
     authors: ["Nakib Uddin Ahmed"],
-    year: 2025,
+    year: 2026,
     venue: "Springer/IEEE",
     venueShort: "2025",
     category: "Geography",
@@ -78,7 +92,7 @@ const publications = [{
 {
     title: "Food Desert Exposure and Chronic Disease Burden Across U.S. Counties: An Explainable Machine Learning Framework Using USDA and BRFSS Data",
     authors: ["Nakib Uddin Ahmed"],
-    year: 2025,
+    year: 2026,
     venue: "Springer/IEEE",
     venueShort: "2025",
     category: "Healthcare AI",
@@ -92,7 +106,7 @@ const publications = [{
 {
     title: "Exoplanet Classification Using Machine Learning: A Comparative Study of Random Forest, XGBoost, and Neural Networks",
     authors: ["Nakib Uddin Ahmed, Azizur Rahman"],
-    year: 2025,
+    year: 2026,
     venue: "NASA Exoplanet Archive Research",
     venueShort: "NASA 2025",
     category: "AI & Astronomy",
