@@ -4,15 +4,6 @@ import { GraduationCap, BookOpen } from 'lucide-react';
 const Education = () => {
     const educationDetails = [
         {
-            logo: "https://upload.wikimedia.org/wikipedia/en/d/d9/Shahjalal_University_of_Science_and_Technology_logo.png?_=20190131162605",
-            degree: "Master in Information Technology",
-            institution: "Shahjalal University of Science and Technology",
-            period: "Running",
-            gpa: "Running",
-            description: "Advanced coursework in AI, machine learning, software architecture, and cloud-based solutions. Engaged in Industrial Internship, capstone projects, and academic mentoring.",
-            icon: <GraduationCap className="w-6 h-6 text-blue-600" />
-        },
-        {
             logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThojYZr_EOQlsW3U_UlbcConqVxaxyzsTpvw&s",
             degree: "Bachelor of Science in Computer Science and Engineering",
             institution: "Metropolitan University",
