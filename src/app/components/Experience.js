@@ -6,7 +6,7 @@ const Experience = () => {
         {
             icon: <Code className="w-6 h-6 text-blue-600" />,
             title: "Executive, Data Analyst",
-            company: "Bionics Bangladesh",
+            company: "Zeuz",
             type: "Full Time",
             location: "Sylhet, Bangladesh",
             period: "January 2025 – Running",
