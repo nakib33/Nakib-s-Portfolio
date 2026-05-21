@@ -8,7 +8,7 @@ const Education = () => {
             degree: "Bachelor of Science in Computer Science and Engineering",
             institution: "Metropolitan University",
             period: "2018 – 2022",
-            gpa: "3.50",
+            gpa: "3.69",
             description: "Specialized in backend development and software engineering, with a focus on programming languages, algorithms, data structures, and database management.",
             icon: <BookOpen className="w-6 h-6 text-blue-600" />
         }
