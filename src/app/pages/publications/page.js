@@ -4,123 +4,132 @@ import { FileText, Globe, Download, Calendar, Users, ArrowRight, Github } from '
 import Link from 'next/link';
 
 const publications = [{
+    title: "AI-Driven Housing Affordability Forecasting in New York City: An NTA-Level Panel Analysis Using Ensemble Machine Learning",
+    authors: ["Nakib Uddin Ahmed, Azizur Rahman, Mehjabin Ferdous"],
+    year: 2026,
+    venue: "Springer Nature — Applied Spatial Analysis and Policy",
+    venueShort: "Springer",
+    category: "Machine Learning",
+    abstract:
+        "Developed an explainable AI framework to predict severe housing cost burden across New York City neighborhoods using socio-economic, housing, and rental market data (2012–2022). Evaluated Random Forest, XGBoost, and LightGBM, with LightGBM achieving the best performance (R²: 0.93, RMSE: 0.0337). Applied SHAP explainability to identify key affordability drivers, providing data-driven insights for housing policy and urban planning.",
+    
+    pdfLink: null,
+    status: "Published",
+    pdfLink: "/papers/AI-Driven Housing Affordability Forecasting.pdf",
+    github: "https://github.com/nakib33/AI-Driven-Housing-Affordability-Forecasting-in-NYC.git",
+    keywords: [ "Housing Affordability", "Machine Learning", "SHAP Explainability", "New York City", "Neighborhood Tabulation Area", "LightGBM", "XGBoost", "Random Forest", "Ensemble Learning", "ACS", "Spatial Autocorrelation", "Rent Burden", "Time-Series CV" ],
+},
+
+{
     title: "Enhancing Online Recruitment Fraud Detection: A Comparative Analysis of Gradient Boosting and Transformer Architectures Under Severe Class Imbalance",
-    authors: ["Nakib Uddin Ahmed"],
+    authors: ["Nakib Uddin Ahmed, Azizur Rahman"],
     year: 2026,
     venue: "International Journal of Computer Applications",
     venueShort: "IJCA 2024",
     category: "Machine Learning",
     abstract:
-        "Through the exponential rise in online recruitment services, the job hunting process has been simplified to a great extent, but has also created a breed of online job ads that are extremely dangerous to job seekers in terms of data security and finances. It is computationally hard to differentiate legitimate and illegitimate postings because of the advanced linguistic structure of fake advertisements and because the real-world data is severely class imbalanced. This research paper presents a comparative and indepth analysis of Machine Learning (ML), Deep Learning (DL), and Transformer-based architectures in detecting fraudulent job postings automatically. A dataset of 17,883 records was utilized, and robust text preprocessing techniques were applied, such as semantic representation using Word2Vec embeddings. The Synthetic Minority Over-Sampling Technique (SMOTE) was applied to address the significant imbalance between authentic (17,014) and invalid (866) samples. A broad range of classifiers was evaluated, including Random Forest (RF), Support Vector Machine (SVM), K-Nearest Neighbors (KNN), Decision Tree (DT), XGBoost (XGB), and Logistic Regression (LR), along with Deep Learning models (ANN, LSTM) and state-of-the-art Transformers (BERT, RoBERTa). Experimental outcomes showed that ensemble learning and Transformer-based models are highly effective compared to traditional linear classifiers. In particular, XGBoost delivered the best results with 99.44% accuracy and an F1-score of 0.99, followed closely by Random Forest (99.37%) and RoBERTa (98.81%). SVM, on the other hand, demonstrated a low level of efficacy with an accuracy of 50.44 per cent. The results indicate that the combination of SMOTE with gradient-boosting algorithms or pre-trained Transformers offers a highly promising framework for protecting the online recruitment ecosystem against fraud cases.",
+        "Developed an AI-based fraudulent job posting detection system using Machine Learning, Deep Learning, and Transformer models on a dataset of 17,883 job advertisements. Applied advanced text preprocessing, Word2Vec embeddings, and SMOTE to address class imbalance. Achieved 99.44% accuracy with XGBoost (F1-score: 0.99), demonstrating the effectiveness of ensemble learning and transformer-based approaches for detecting online recruitment fraud.",
+    
     pdfLink: null,
     status: "Published",
     pdfLink: "/papers/Enhancing Online Recruitment Fraud Detection.pdf",
     github: "https://github.com/nakib33/Enhancing-Online-Recruitment-Fraud-Detection.git",
     keywords: ["Online Recruitment Fraud", "NLP", "SMOTE", "XGBoost", "BERT", "Deep Learning"],
 },
-{
-    title: "Predicting Housing Affordability in New York City: A Neighborhood-Level Machine Learning Analysis Across 239 NTAs (2012–2022)",
-    authors: ["Nakib Uddin Ahmed"],
-    year: 2026,
-    venue: "Springer Nature",
-    venueShort: "ASAP 2025",
-    category: "Machine Learning",
-    abstract:
-        "Housing affordability is one of the signature governance challenges in New York City (NYC), with more than 52% of renter households cost-burdened and just under a third identified as severely cost-burdened, paying above 50% of gross income on housing. Here, we propose a neighborhood-scale, explain-machinelearning-based framework to predict the affordability of housing at the NTA level with 2,512 observations over time scaled to the Neighborhood Tabulation Area (NTA), comprising 239 NTAs from 2012–2022. We integrate 49 socio-economic, housing market, and rent indices features from ACS 5-year estimates, eviction records, and the Zillow Observed Rent Index (ZORI). Three gradient-boosted ensemble models—Random Forest, XGBoost, and LightGBM—are benchmarked under a strict temporal train/validation/test split with 5-fold TimeSeriesSplit cross-validation to prevent data leakage. LightGBM achieved the highest predictive performance (Test R²=0.9258, RMSE=0.03477, MAE=0.0192). SHAP TreeExplainer analysis identifies rent burden, vacancy rate, and rent-to-income ratio as dominant drivers, confirming that NYC’s rent escalation follows a systemic “burden escalator” across boroughs. Spatial diagnostics (Moran’s I) show no significant autocorrelation in residuals, and ablation analysis confirms rental market variables drive the largest incremental contribution. Based on forecasts, we propose a 14-instrument policy matrix including early-warning interventions, borough-differentiated zoning and voucher strategies, and anticipatory resource allocation. This framework demonstrates how explainable AI can operationalize predictive insights into actionable urban governance strategies, offering a replicable model for global cities facing housing crises.",
-    pdfLink: null,
-    status: "Pending",
-    pdfLink: "/papers/IEEE_Housing_Paper_Full.pdf",
-    github: "https://github.com/ayanchyaziz123/AI-Driven-Housing-Affordability-Forecasting-in-New-York-City",
-    keywords: ["Housing Affordability", "XGBoost", "SHAP", "New York City", "NTA", "ACS", "Ensemble Learning", "Spatial Autocorrelation", "Rent Burden", "Time-Series CV"],
-},
-{
-    title: "Precision Maternal Health: Robust High-Risk Pregnancy Prediction via Ensemble Learning and Explainable AI",
-    authors: ["Nakib Uddin Ahmed"],
-    year: 2025,
-    venue: "Springer",
-    venueShort: "Springer 2025",
-    category: "Healthcare AI",
-    abstract:
-        " Purpose: High-risk pregnancies are one significant cause of maternal and fetal mortality in the world. Although diagnosis at the earliest stage is important, standard risk assessment methods usually depend on the subjective clinical evaluation. It is the purpose of this research to develop a high quality, data-driven machine learning (ML) model to make predictions of high-risk pregnancies. Methods: We used the Maternal Health and High-Risk Pregnancy dataset to implement strict preprocessing strategies (imputation, label encoding, and standardization). We considered five foundational ML algorithms, which are Random Forest, Support Vector Machine (SVM), K-Nearest Neighbors (KNN), Xtreme Gradient Boosting (XGBoost), and Decision Tree (DT). To optimize the predictive stability, a Soft Voting Ensemble consisting of SVM, KNN, DT, and XGBoost were created. All of the models were tested with Stratified 5-Fold Cross-Validation. SHapley additive explanations (SHAP) were applied to understand feature importance and solve the black box issue of the conventional ML. Results: The proposed Soft Voting Ensemble was found to have a greater stability with a maximum standard deviation of 98.80 percent and lowest standard deviation (0.32 percent) on the mean accuracy over all the classifiers tested. The SHAP analysis revealed Preexisting Diabetes, Body Mass Index (BMI), and Blood Glucose levels as the main physiological predictors that gave birth to the high-risk categories. Conclusion: This framework balances between good predictive and clinical interpretability. It will be a trusted non-invasive decision-support tool by aligning predictions with known medical knowledge through XAI to instill confidence among obstetricians in clinical practice in practice.",
-    pdfLink: null,
-    status: "Pending",
-    keywords: ["Maternal Health", "High-Risk Pregnancy", "Ensemble Learning", "Explainable AI", "SHAP", "Healthcare ML", "Precision Medicine"],
-    pdfLink: "/papers/HISC-S-26-00819.pdf",
-},
+
 {
     title: "CV-Mamba: Gated CNN Transfer Learning for Mango Leaf Disease Detection with pHash-Based Deduplication and Leakage-Free Partitioning",
-    authors: ["Nakib Uddin Ahmed"],
-    year: 2026,
-    venue: "Q1",
-    venueShort: "2026",
-    category: "Machine Learning",
-    abstract:
-        "This research introduces CV-Mamba, a deep learning pipeline designed to automatically detect and classify mango leaf diseases. By combining Gated CNN transfer learning with perceptual hash-based deduplication and leakage-free data partitioning, the system delivers accurate, reliable disease diagnosis — helping farmers and agricultural experts protect mango crops more efficiently.",
-    pdfLink: null,
-    status: "Pending",
-    keywords: ["Botanic", "Disease", "CV-Mamba", "CNN"],
-    pdfLink: "/papers/geography.pdf",
-},
-{
-    title: "GeoSHAP: An Explainable AI Framework for Multi-Topic Chronic Disease Burden Prediction Across U.S. Geographic and Demographic Strata",
-    authors: ["Nakib Uddin Ahmed"],
-    year: 2026,
-    venue: "Springer/IEEE",
-    venueShort: "2025",
-    category: "Healthcare AI",
-    abstract:
-        "Chronic non-communicable diseases impose a staggering societal burden on the United States, accounting for approximately 90% of the nation's $4.1 trillion annual healthcare expenditure and representing the leading cause of preventable death among adults. Despite decades of surveillance investment, a critical methodological gap persists: existing analytical frameworks cannot simultaneously predict multi-topic chronic disease burden at geographic resolution, attribute predictions to modifiable risk factors, and translate those attributions into policy-actionable allocation maps. This paper introduces GeoSHAP, a novel Explainable AI (XAI) framework that closes this gap through three integrated innovations. First, we construct the Chronic Disease Burden Score (CDBS), a domain-weighted composite index spanning seven CDC disease categories (cardiovascular disease, diabetes, cancer, COPD, asthma, arthritis, and kidney disease), derived from Global Burden of Disease years-of-life-lost weights. Second, we benchmark eight machine-learning regression models across four algorithmic families (linear, neural network, bagging, and gradient boosting) on the CDC U.S. Chronic Disease Indicators dataset (309,215 records, 2010–2022), applying family-appropriate SHAP explainers (TreeExplainer, LinearExplainer, KernelExplainer) to each model. Third, GeoSHAP aggregates mean absolute SHAP values at U.S. state resolution, producing interpretable geographic attribution maps and temporal stability metrics. LightGBM achieves the best predictive performance (test R² = 0.924, RMSE = 3.89, 5-fold CV R² = 0.921 ± 0.012). SHAP analysis identifies socioeconomic deprivation, smoking prevalence, and obesity rate as the three dominant disease burden drivers, collectively explaining 54.2% of mean absolute SHAP contribution. GeoSHAP temporal stability analysis yields Spearman ρ = 0.893 and cosine similarity = 0.914 year-over-year, validating attribution reliability. The AI-driven Spatial Health Allocation Framework (AI-SHAF) converts GeoSHAP outputs into three-tier priority maps, identifying 13 states requiring urgent federal chronic disease intervention. The fully reproducible pipeline is released publicly to accelerate evidence-based, equitable health policy in the United States.",
-    pdfLink: null,
-    status: "Working",
-    keywords: ["Maternal Health", "High-Risk Pregnancy", "Ensemble Learning", "Explainable AI", "SHAP", "Healthcare ML", "Precision Medicine"],
-    pdfLink: "/papers/GeoSHAP_IEEE_Journal_Paper_Final.pdf",
-},
-{
-    title: "ClimateXAI: An Explainable Machine Learning Framework for Census-Tract-Level Climate Displacement Risk Prediction Across U.S. Cities",
-    authors: ["Nakib Uddin Ahmed"],
-    year: 2026,
-    venue: "Springer/IEEE",
-    venueShort: "2025",
-    category: "Geography",
-    abstract:
-        "Climate-induced displacement is accelerating across the United States, yet existing predictive frameworks operate at coarse county-level resolution, exclude socioeconomic mediators, and lack the interpretability required for equity-sensitive policy action. This paper presents ClimateXAI, a SHAP-driven stacked ensemble machine learning framework that predicts climate displacement risk at the census-tract level across 74,000 U.S. tracts spanning all 50 states. The proposed framework integrates 37 features from five open-access federal datasets covering physical hazard exposure, socioeconomic vulnerability, racial composition, social vulnerability indices, migration flows, and disaster exposure. A Climate Displacement Pressure Score is constructed per tract to capture both realized displacement and latent hazard pressure. Five compound interaction features operationalize the multiplicative compound vulnerability hypothesis. A stacked ensemble of Gradient Boosting, Random Forest, and Elastic Net regressors, meta-learned by Ridge Regression, achieves R² = 0.9856, RMSE = 0.1343, and MAE = 0.1004 on the held-out test set, surpassing the prior county-level benchmark of R² = 0.71 by 27.56 percentage points. Five-fold spatial cross-validation confirms stable generalizability across all geographic regions (R² = 0.9820 ± 0.0032). SHAP TreeExplainer analysis identifies expected annual loss and per-capita outflow as the two dominant predictors, jointly accounting for 98.7% of model attribution. Spatial autocorrelation diagnostics confirm significant geographic clustering of displacement pressure. Equity-stratified analysis uncovers the Inverted Equity Paradox, identifies 2,925 immobility trap tracts requiring in-place resilience investment, and documents the Western Climate Displacement Paradox wherein drought and wildfire hazards produce near-zero realized displacement signal. ClimateXAI delivers the first census-tract-level, equity-sensitive, fully interpretable U.S. climate displacement intelligence tool.",
-    pdfLink: null,
-    status: "Working",
-    keywords: ["climate displacement prediction", "explainable artificial intelligence", "SHAP", "Census-tract machine learning", "spatial autocorrelation", "compound vulnerability", "stacked ensemble learning", "immobility traps"],
-    pdfLink: "/papers/geography.pdf",
-},
-{
-    title: "Food Desert Exposure and Chronic Disease Burden Across U.S. Counties: An Explainable Machine Learning Framework Using USDA and BRFSS Data",
-    authors: ["Nakib Uddin Ahmed"],
-    year: 2026,
-    venue: "Springer/IEEE",
-    venueShort: "2025",
-    category: "Healthcare AI",
-    abstract:
-        "Food insecurity and limited access to nutritious food are among the most consequential yet understudied drivers of chronic disease in the United States. More than 19 million Americans reside in food deserts — areas where physical and economic barriers severely limit access to affordable, healthy food. Decades of epidemiological research have established associations between food desert exposure and elevated rates of diabetes, obesity, hypertension, and cardiovascular disease. Yet no existing study has translated these associations into a unified, explainable machine learning framework capable of county-level prediction, policy prioritization, and equity auditing. This proposal presents FoodEquity-ML, an ensemble machine learning framework that integrates USDA Food Access Research Atlas data with CDC Behavioral Risk Factor Surveillance System (BRFSS) chronic disease outcomes to predict county-level chronic disease burden from food desert exposure indicators. The framework introduces a novel Chronic Disease Burden Index (CDBI) as a composite multi-disease outcome, applies SHAP-based explainability to identify the most impactful food access features driving disease burden, and conducts systematic equity auditing across racial, income, and geographic strata. FoodEquity-ML is specifically designed to produce policy-actionable outputs: a 12-instrument intervention matrix mapped to SHAP-ranked drivers, enabling federal and state policymakers to prioritize food access investments where they will yield the greatest health equity gains. The entire framework is built on publicly available datasets, uses a proven ensemble pipeline, and targets IEEE Transactions on Computational Social Systems (TCSS) — a Q1 journal with zero APC.",
-    pdfLink: null,
-    status: "Working",
-    keywords: ["Added soon"],
-    pdfLink: "/papers/geography.pdf",
-},
-{
-    title: "Exoplanet Classification Using Machine Learning: A Comparative Study of Random Forest, XGBoost, and Neural Networks",
     authors: ["Nakib Uddin Ahmed, Azizur Rahman"],
-    year: 2026,
-    venue: "NASA Exoplanet Archive Research",
-    venueShort: "NASA 2025",
-    category: "AI & Astronomy",
+    year: 2025,
+    venue: "Frontiers",
+    venueShort: "Frontiers 2025",
+    category: "Computer Vision",
     abstract:
-        "This study presents a machine learning pipeline for classifying exoplanets by their detection method using orbital and physical characteristics from the NASA Exoplanet Archive (38,090 records, 100 features). Key features include orbital period, planetary mass, equilibrium temperature, and insolation flux. After KNN imputation and feature standardization, three models were evaluated: Random Forest, XGBoost, and a Keras/TensorFlow Neural Network. XGBoost achieved the highest accuracy of ~95.3% across 11 discovery-method categories. SHAP analysis was applied for feature importance interpretation.",
+        "The problem of mango leaf disease is an urgent task in tropical areas. In this paper, we propose an end-to-end deep learning pipeline for eight-class mango leaf disease classification based on perceptual hash deduplication (pHash, τ=8) and leakage-free stratified partitioning for the first time. Experiments show that 739 similar images (18.48%) were removed from the initial 4,000 images by deduplication, leaving 3,261 unique images. The MambaOut-Small model demonstrated outstanding performance with a test accuracy of 99.59%, and a macro F1-score of 0.9962, outperforming the MambaOut-Base model (99.39%). For edge deployment, the MambaOut-Kobe model, containing 9.1M parameters, achieved a good balance between performance (99.18%) and model size, being more than 5.3x smaller than the largest counterpart.",
+    
     pdfLink: null,
-    status: "Working",
-    keywords: ["Exoplanet", "NASA Exoplanet Archive", "XGBoost", "Random Forest", "Neural Networks", "SHAP", "Astronomy"],
-    github: "https://github.com/ayanchyaziz123/Exoplanet_Classification",
+    status: "Accepted",
+    pdfLink: "/papers/CV_Mamba.pdf",
+    github: "https://github.com/nakib33/CV-Mamba-Gated-CNN-Transfer-Learning.git",
+    keywords: [ "Mango Leaf Disease", "MambaOut", "Gated CNN", "Transfer Learning", "pHash Deduplication", "Leakage-Free Partitioning", "Plant Disease Detection", "Computer Vision", "Agricultural AI" ],
+},
+
+
+{
+    title: "Soft Voting Ensemble Learning and SHAP-Based Interpretability for Maternal and Fetal Health Risk Stratification Across Multiple Clinical Datasets",
+    authors: ["Nakib Uddin Ahmed"],
+    year: 2026,
+    venue: "IEEE Xplore",
+    venueShort: "IEEE Xplore 2026",
+    category: "Healthcare AI",
+    abstract:
+        "The problem of mango leaf disease is an urgent task in tropical areas. In this paper, we propose an end-to-end deep learning pipeline for eight-class mango leaf disease classification based on perceptual hash deduplication (pHash, τ=8) and leakage-free stratified partitioning for the first time. Experiments show that 739 similar images (18.48%) were removed from the initial 4,000 images by deduplication, leaving 3,261 unique images. The MambaOut-Small model demonstrated outstanding performance with a test accuracy of 99.59%, and a macro F1-score of 0.9962, outperforming the MambaOut-Base model (99.39%). For edge deployment, the MambaOut-Kobe model, containing 9.1M parameters, achieved a good balance between performance (99.18%) and model size, being more than 5.3x smaller than the largest counterpart.",
+    
+    pdfLink: null,
+    status: "Accepted in Conferenece",
+    pdfLink: "/papers/CV_Mamba.pdf",
+    github: "https://github.com/nakib33/Maternal-and-Fetal-Health-Risk.git",
+    keywords: [ "Maternal Health Risk", "Fetal Health Classification", "Soft Voting Ensemble", "SHAP-Based Interpretability", "Ensemble Learning", "XGBoost", "Random Forest", "Explainable Artificial Intelligence (XAI)", "Cardiotocography (CTG)", "5-Fold Stratified Cross-Validation", "Friedman Test", "Wilcoxon Signed-Rank Test", "High-Risk Pregnancy", "Blood Glucose", "Systolic Blood Pressure", "Abnormal Short-Term Variability" ],
 },
     
+
+{
+    title: "PolyDetect: A Quality-Aware Hybrid Deep Learning Framework for Robust Polyp Segmentation in Degraded Colonoscopy Images",
+    authors: ["Nakib Uddin Ahmed, Azizur Rahman"],
+    year: 2026,
+    venue: "Science Direct - International Journal of Medical Informatics",
+    venueShort: "IJMI 2026",
+    category: "Computer Vision",
+    abstract:
+        "Developed PolyDetect, a quality-aware deep learning framework for real-time colorectal polyp segmentation in colonoscopy images. Integrated image quality assessment (IQA), adaptive image enhancement, and a hybrid Transformer–CNN architecture to improve robustness against image degradation. Achieved a Dice score of 0.8066 and IoU of 0.7262 while running at 53.62 FPS, enabling accurate and clinically applicable real-time polyp detection.",
+    
+    pdfLink: null,
+    status: "Submitted",
+    pdfLink: "/papers/PolyDetect_Manuscript V1.pdf",
+    github: "https://github.com/nakib33/Robust-Polyp-Segmentation.git",
+    keywords:  [ "Polyp segmentation", "Colonoscopy", "Image quality assessment", "Hybrid deep learning", "PVT-v2", "Degradation robustness", "Boundary refinement", "Colorectal cancer", "Explainable AI", "PolyDetect (Proposed Framework)", "DnCNN", "U-Net", "U-Net++", "PraNet", "SANet", "Polyp-PVT", "SSFormer / SSFormer-L", "VMDU-Net", "ResNet-50", "CFFormer", "CFA-Net", "MiT-B3" ],
+},
+
+
+{
+    title: "Beyond Binary: Four-Class Risk Stratification from Gastrointestinal Endoscopy Using Asymmetric-Cost Lightweight CNN–Transformer Learnings",
+    authors: ["Nakib Uddin Ahmed, Azizur Rahman, Mehjabin Ferdous"],
+    year: 2026,
+    venue: "Springer - Medical & Biological Engineering & Computing",
+    venueShort: "MBEC 2026",
+    category: "Healthcare AI",
+    abstract:
+        "Developed a lightweight CNN–Transformer framework for four-class gastrointestinal lesion risk stratification aligned with ACG and ESGE clinical guidelines. Evaluated DenseNet-121, EfficientNet-B0, and DeiT-Tiny with a novel Asymmetric Endoscopy Loss (AEL) and uncertainty estimation. Achieved Macro F1 of 0.84, zero missed high-risk lesions, and automated 44.9% of low-risk cases, improving clinically reliable AI-assisted endoscopy.",
+    
+    pdfLink: null,
+    status: "Submitted",
+    pdfLink: "/papers/Gastrointestinal Endoscopy.pdf",
+    github: "https://github.com/nakib33/Gastrointestinal-Endoscopy.git",
+    keywords:  ["Gastrointestinal endoscopy", "Risk stratification", "Asymmetric loss function", "Lightweight neural networks", "Vision Transformer", "Monte Carlo Dropout", "HyperKvasir" ],
+},
+
+
+{
+    title: "Cross-Domain Transfer Learning for Brain Tumor Classification Under Limited MRI Data Regimes.",
+    authors: ["Nakib Uddin Ahmed, Azizur Rahman, Mehjabin Ferdous"],
+    year: 2026,
+    venue: "Springer - Medical & Biological Engineering & Computing",
+    venueShort: "MBEC 2026",
+    category: "Healthcare AI",
+    abstract:
+        "Evaluated transfer learning for four-class brain tumor MRI classification using EfficientNet-B0 across varying training data sizes. Compared ImageNet-pretrained and randomly initialized models on 7,200 MRI images, showing significant gains under extreme data scarcity. Achieved strong classification performance with Grad-CAM++ explainability, providing practical insights for data-efficient AI in medical imaging.",
+    
+    pdfLink: null,
+    status: "Submitted",
+    pdfLink: "/papers/Brain_Tumor_Transfer_Learning.pdf",
+    github: "https://github.com/nakib33/Cross-Domain-Transfer-Learning-for-Brain-Tumor-Classification.git",
+    keywords:  [ "Transfer Learning", "Brain Tumor Classification", "MRI", "EfficientNet", "Low-Data Regime", "Statistical Power", "Explainable AI", "Grad-CAM++" ],
+},
+
+
 ];
 
-const categories = ['All', 'Machine Learning', 'Healthcare AI', 'Geography', 'AI & Astronomy'];
+const categories = ['All', 'Machine Learning', 'Healthcare AI', 'Computer Vision'];
 
 export default function PublicationsPage() {
     const [active, setActive] = useState('All');
@@ -143,8 +152,8 @@ export default function PublicationsPage() {
                         Publications
                     </h1>
                     <p className="text-gray-600 text-sm sm:text-lg max-w-2xl leading-relaxed">
-                        Research at the intersection of machine learning, AI systems,
-                        and applied sciences — from astronomy to healthcare diagnostics.
+                        Conducting research in Machine Learning, Deep Learning, Explainable AI (XAI), 
+                        and AI Systems to develop scalable, data-driven solutions for real-world challenges.
                     </p>
                 </header>
 
