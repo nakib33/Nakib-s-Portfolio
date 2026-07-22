@@ -227,7 +227,7 @@ export default function AboutPage() {
             ML algorithms.
           </p>
           <p>
-            Proficient in Python, R, SQL, TensorFlow, PyTorch, scikit-learn, and
+            Proficient in Python, SQL, PyTorch, scikit-learn, and
             Power BI. Experienced in NLP, data visualization, statistical
             modeling, and building scalable analytical systems. Strong
             foundation in OOP, algorithms, and data structures, with hands-on

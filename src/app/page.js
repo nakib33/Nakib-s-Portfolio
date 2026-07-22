@@ -96,7 +96,7 @@ const HomePage = () => {
   };
 
   const stats = [
-    { number: "50", label: "PROJECTS COMPLETED" },
+    { number: "25", label: "PROJECTS COMPLETED" },
     { number: "4", label: "Research Paper" },
     { number: "3", label: "YEARS OF EXPERIENCE" },
     { number: "15", label: "TECHNOLOGIES" },
@@ -153,7 +153,7 @@ const HomePage = () => {
               </strong>{" "}
               with 3+ years of experience delivering data-driven solutions and
               predictive models. Author of peer-reviewed publications in Machine
-              Learning and AI. Skilled in Python, R, SQL, TensorFlow, PyTorch,
+              Learning and AI. Skilled in Python, SQL, PyTorch,
               and Power BI. Specializes in NLP, data visualization, and building
               scalable analytical systems that drive business impact.
             </p>
@@ -164,6 +164,15 @@ const HomePage = () => {
                 <span>
                   B.Sc. Computer Science & Engineering — Metropolitan
                   University, Bangladesh
+                </span>
+              </div>
+            </div>
+            
+            <div className="flex flex-col gap-1.5 text-sm text-gray-500 max-w-lg mx-auto lg:mx-0">
+              <div className="flex items-center justify-center lg:justify-start gap-2">
+                <span className="w-1.5 h-1.5 rounded-full bg-gray-400 flex-shrink-0"></span>
+                <span>
+                  Masters in Information Technology — Shahjalal University of Science and Technology, Bangladesh
                 </span>
               </div>
             </div>
@@ -194,7 +203,7 @@ const HomePage = () => {
             {/* Social icons */}
             <div className="flex items-center gap-5 justify-center lg:justify-start pt-1">
               <a
-                href="https://www.linkedin.com/in/azizur-rahman-720636165/"
+                href="https://www.linkedin.com/in/nakib33/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-blue-600 transition-colors"
@@ -203,7 +212,7 @@ const HomePage = () => {
                 <Linkedin className="w-5 h-5" />
               </a>
               <a
-                href="https://github.com/ayanchyaziz123"
+                href="https://github.com/nakib33"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-gray-900 transition-colors"
@@ -212,7 +221,7 @@ const HomePage = () => {
                 <Github className="w-5 h-5" />
               </a>
               <a
-                href="mailto:azizurusa22@gmail.com"
+                href="mailto:nakibuddin33@gmail.com"
                 className="text-gray-400 hover:text-red-500 transition-colors"
                 aria-label="Email"
               >
@@ -242,8 +251,8 @@ const HomePage = () => {
             <div className="flex w-[200px] divide-x bg-gray-50 rounded overflow-hidden">
               {[
                 ["3+", "Years"],
-                ["12+", "Projects"],
-                ["5+", "Papers"],
+                ["25+", "Projects"],
+                ["4+", "Papers"],
               ].map(([num, label]) => (
                 <div key={label} className="flex-1 text-center py-2">
                   <div className="text-sky-900 text-xl font-bold">{num}</div>
