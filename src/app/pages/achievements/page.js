@@ -9,18 +9,13 @@ const AchievementsPage = () => {
 
     return (
         <div className="min-h-screen">
-            {/* Achievements Section */}
-            <section className="max-w-5xl mx-auto px-6 py-12">
+            <section className="max-w-5xl mx-auto px-6">
                 <KeyAchievements />
             </section>
-
-            {/* Certificates Section */}
-            <section className="max-w-5xl mx-auto px-6 pb-12">
+            <section className="max-w-5xl mx-auto px-6">
                 <SkillCertificate />
             </section>
-
-            {/* Certificates Section */}
-            <section className="max-w-5xl mx-auto px-6 pb-12">
+            <section className="max-w-5xl mx-auto px-6">
                 <ExtraCurricular />
             </section>
         </div>

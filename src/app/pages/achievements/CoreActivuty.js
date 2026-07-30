@@ -31,7 +31,7 @@ const achievements = [
     },
   },
   {
-    id: "07",
+    id: "02",
     icon: Trophy,
     title: "Competitive Programming",
     subtitle: "300+ Problems Solved",
@@ -50,7 +50,7 @@ const achievements = [
     },
   },
   {
-    id: "08",
+    id: "03",
     icon: Code2,
     title: "Open Source",
     subtitle: "Community Contributor",
@@ -69,7 +69,7 @@ const achievements = [
     },
   },
   {
-    id: "09",
+    id: "04",
     icon: Star,
     title: "Idea Sharing 2020",
     subtitle: "AI Innovation Challenge",
@@ -88,7 +88,7 @@ const achievements = [
     },
   },
   {
-    id: "10",
+    id: "05",
     icon: BrainCircuit,
     title: "Machine Learning",
     subtitle: "AI-Driven Applications",
@@ -107,7 +107,7 @@ const achievements = [
     },
   },
   {
-    id: "11",
+    id: "06",
     icon: BookCheck,
     title: "Skills & Certifications",
     subtitle: "Multidisciplinary Technical",

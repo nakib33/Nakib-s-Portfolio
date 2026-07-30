@@ -94,7 +94,7 @@ export default function Extracurricular() {
   return (
     <section className="max-w-7xl mx-auto px-6 py-16">
       <header className="mb-6">
-        <h1 className="text-3xl font-light text-gray-900 border-b border-gray-200 pb-3">
+        <h1 className="text-3xl font-bold text-gray-900 border-b border-gray-200 pb-3">
           Job & Extra Curricular Experiences
         </h1>
       </header>
