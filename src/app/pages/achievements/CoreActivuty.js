@@ -2,23 +2,23 @@
 
 import { useState } from "react";
 import {
-  Shield,
   Trophy,
   Code2,
   Star,
   BrainCircuit,
   BookCheck,
+  FileText,
 } from "lucide-react";
 
 const achievements = [
   {
     id: "01",
-    icon: Shield,
-    title: "Metropolitan University",
-    subtitle: "Computer Science Student",
+    icon: FileText,
+    title: "7 Peer-Reviewed Publications",
+    subtitle: "Springer Nature, Frontiers, MBEC, IJCA & Conference Proceedings",
     description:
-      "Building expertise in software engineering across three leadership roles — Student Secretary (Social Services Club), Office Secretary (CSE Society), and Organization Secretary (Photography Society). Also volunteered in digital safety awareness programs.",
-    badge: "Extracurricular & Leadership",
+      "Published and accepted research in **Springer Nature, Frontiers, MBEC, IJCA, and international conferences**, spanning **medical imaging, computer vision, NLP, healthcare AI, urban analytics, and machine learning** with high-impact predictive AI applications.",
+    badge: "Springer Nature · Frontiers · IJCA · MBEC · ICITAI",
     color: {
       bg: "bg-blue-50",
       iconBg: "bg-blue-100",
@@ -31,7 +31,7 @@ const achievements = [
     },
   },
   {
-    id: "02",
+    id: "07",
     icon: Trophy,
     title: "Competitive Programming",
     subtitle: "300+ Problems Solved",
@@ -50,7 +50,7 @@ const achievements = [
     },
   },
   {
-    id: "03",
+    id: "08",
     icon: Code2,
     title: "Open Source",
     subtitle: "Community Contributor",
@@ -69,7 +69,7 @@ const achievements = [
     },
   },
   {
-    id: "04",
+    id: "09",
     icon: Star,
     title: "Idea Sharing 2020",
     subtitle: "AI Innovation Challenge",
@@ -88,7 +88,7 @@ const achievements = [
     },
   },
   {
-    id: "05",
+    id: "10",
     icon: BrainCircuit,
     title: "Machine Learning",
     subtitle: "AI-Driven Applications",
@@ -107,7 +107,7 @@ const achievements = [
     },
   },
   {
-    id: "06",
+    id: "11",
     icon: BookCheck,
     title: "Skills & Certifications",
     subtitle: "Multidisciplinary Technical",

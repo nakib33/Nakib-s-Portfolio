@@ -10,61 +10,53 @@ import {
   FlaskConical,
   Award,
   ExternalLink,
+  BrainCircuit,
+  Eye,
+  Globe,
 } from "lucide-react";
 
 const skillsData = {
-  Languages: ["Python", "JavaScript", "C", "C++", "Java", "R", "SQL"],
+  Languages: ["Python", "SQL", "JavaScript", "C", "C++", "Java"],
   "Web & Frameworks": [
-    "React.js",
+    "React",
     "Next.js",
-    "Node.js",
-    "Express.js",
-    "Django",
-    "HTML",
-    "CSS",
-    "Tailwind CSS",
+    "FastAPI",
+    "HTML5",
+    "CSS3",
+    "REST APIs",
+    "JSON",
   ],
   "AI & Machine Learning": [
-    "TensorFlow",
     "PyTorch",
-    "Scikit-learn",
+    "Machine Learning",
     "Deep Learning",
+    "Computer Vision",
     "NLP",
-    "RAG",
-    "Agentic AI",
-    "GAN",
+    "LLM",
     "Transformers",
-    "Ai Automation",
-    "GBDT",
-    "Supervised",
-    "Unsupervised",
-    "Reinforcement",
+    "Multimodal AI",
+    "Explainable AI (XAI)",
+    "Ensemble Learning",
   ],
   "Data & Analytics": [
     "Pandas",
     "NumPy",
     "Matplotlib",
-    "Seaborn",
     "Plotly",
     "Power BI",
     "Tableau",
-    "Excel",
+    "Microsoft Excel",
     "Looker Studio",
   ],
-  "Databases & Big Data": [
-    "MySQL",
-    "PostgreSQL",
-    "MongoDB",
-    "BigQuery",
-    "Snowflake",
-    "Firebase Firestore",
-  ],
-  "Cloud & DevOps": ["AWS", "Docker", "Kubernetes", "CI/CD", "Git", "GitHub"],
+  Databases: ["PostgreSQL", "MySQL", "MongoDB"],
+  "Cloud & DevOps": ["AWS", "Docker", "Git", "GitHub", "Linux", "CI/CD", "MLOps"],
   "Data Engineering": [
-    "ETL",
-    "Web Scraping",
     "Data Cleaning",
-    "Data Warehouse",
+    "Data Preprocessing",
+    "Feature Engineering",
+    "ETL",
+    "Data Collection",
+    "Web Scraping",
   ],
   "Statistics & ML Concepts": [
     "EDA",
@@ -75,6 +67,16 @@ const skillsData = {
     "PCA",
     "Bias-Variance",
     "F1 Score",
+  ],
+  "Testing & Tools": [
+    "PyTest",
+    "Jest",
+    "Selenium",
+    "Appium",
+    "Git",
+    "GitHub",
+    "VS Code",
+    "IntelliJ IDEA",
   ],
 };
 const certifications = [
@@ -132,30 +134,30 @@ const certifications = [
 
 const researchInterests = [
   {
-    icon: <FlaskConical className="w-5 h-5 text-blue-600" />,
-    title: "Machine Learning & Ensemble Methods",
-    desc: "XGBoost, Random Forest, LightGBM, stacking ensembles applied to real-world tabular datasets.",
+    icon: <BrainCircuit className="w-5 h-5 text-[#1a3a4a]" />,
+    title: "Artificial Intelligence & Machine Learning",
+    desc: "Artificial Intelligence, Machine Learning, Deep Learning, Foundation Models, Large Language Models (LLMs), Natural Language Processing (NLP), Transformers, Vision Transformers (ViTs), Multimodal Learning, Reinforcement Learning, Representation Learning, and Self-Supervised Learning.",
   },
   {
-    icon: <BookOpen className="w-5 h-5 text-blue-600" />,
-    title: "Explainable AI (XAI)",
-    desc: "SHAP-based model interpretability for healthcare, finance, and social science applications.",
+    icon: <Eye className="w-5 h-5 text-[#1a3a4a]" />,
+    title: "Computer Vision & Biomedical AI",
+    desc: "Computer Vision, Medical Imaging, Biomedical Image Analysis, Bioinformatics, Healthcare AI, Precision Medicine, Clinical Decision Support Systems, Medical Image Segmentation, Medical Image Classification, Disease Risk Prediction, and AI for Digital Health.",
   },
   {
-    icon: <Code2 className="w-5 h-5 text-blue-600" />,
-    title: "NLP & Transformer Architectures",
-    desc: "BERT, RoBERTa, and transformer models for fraud detection, text classification, and information extraction.",
+    icon: <FlaskConical className="w-5 h-5 text-[#1a3a4a]" />,
+    title: "Explainable AI & Intelligent Data Analytics",
+    desc: "Explainable Artificial Intelligence (XAI), Trustworthy AI, Responsible AI, Predictive Analytics, Time Series Forecasting, Ensemble Learning, Graph Machine Learning, Anomaly Detection, Fraud Detection, Decision Intelligence, and Uncertainty Estimation.",
   },
   {
-    icon: <Award className="w-5 h-5 text-blue-600" />,
-    title: "Agentic AI & LLM Systems",
-    desc: "Building autonomous AI agents using OpenAI APIs, tool use, and multi-step reasoning pipelines.",
+    icon: <Globe className="w-5 h-5 text-[#1a3a4a]" />,
+    title: "Geospatial AI & Intelligent Systems",
+    desc: "Geospatial AI, Urban Analytics, Urban Computing, Spatial Data Science, GIS & Remote Sensing, Intelligent Transportation Systems, Human Mobility Analytics, AI for Sustainable Development, MLOps, AI Systems Engineering, Edge AI, Cloud AI, and Distributed Machine Learning.",
   },
 ];
 
 const highlights = [
   { number: "50+", label: "PROJECTS COMPLETED" },
-  { number: "3+", label: "RESEARCH PUBLICATIONS" },
+  { number: "7+", label: "RESEARCH PUBLICATIONS" },
   { number: "3+", label: "YEARS OF EXPERIENCE" },
   { number: "8+", label: "CERTIFIED SKILLS" },
   { number: "3.69", label: "B.SC GPA" },
@@ -202,71 +204,46 @@ export default function AboutPage() {
 
       {/* ── Professional Summary ── */}
       <section className="max-w-5xl mx-auto px-6 py-12 border-b border-gray-100">
-        <h2 className="text-2xl font-light text-gray-900 border-b border-sky-950 pb-3 mb-6">
+        <h2 className="text-2xl font-bold text-gray-900 border-b border-gray-800 pb-3 mb-6">
           Professional Summary
         </h2>
-        <div className="max-w-3xl space-y-4 text-gray-700 leading-relaxed text-base">
+        <div className="w-full space-y-4 text-gray-700 leading-relaxed text-base text-justify">
           <p>
-            Data Scientist and AI/ML Engineer with 3+ years of experience
-            delivering data-driven solutions, predictive models, and AI-powered
-            systems. Holds a{" "}
-            <strong>B.Sc. foundation in Data Science and AI</strong> from
-            Metropolitan University, Bangladesh.
+            AI Researcher and Machine Learning Engineer with 3+ years of experience developing intelligent, data-driven systems across healthcare, bioinformatics, geospatial analytics, urban computing, and predictive modeling. Earned a B.Sc. in Computer Science &amp; Engineering (CGPA: 3.69/4.00) from Metropolitan University, Bangladesh, and an M.Sc. in Information Technology (CGPA: 3.88/4.00) from Shahjalal University of Science and Technology (SUST), Bangladesh. Passionate about advancing trustworthy, scalable, and interpretable AI that bridges fundamental research with real-world deployment.
           </p>
           <p>
-            Author of peer-reviewed{" "}
-            <Link
-              href="/pages/publications"
-              className="text-blue-600 hover:underline font-medium"
-            >
-              research publications
-            </Link>{" "}
-            in Machine Learning, NLP, and applied AI — including projects on
-            education analytics, predictive modeling, and social impact
-            solutions using ensemble learning, SHAP explainability, and advanced
-            ML algorithms.
+            Author of multiple peer-reviewed research publications in internationally recognized journals, with contributions spanning Medical Imaging, Explainable Artificial Intelligence (XAI), Bioinformatics, Computer Vision, Natural Language Processing (NLP), Healthcare AI, Recruitment Fraud Detection, Housing Affordability Forecasting, Geospatial AI, Urban Analytics, and Ensemble Machine Learning. My research focuses on designing robust AI models that improve decision-making, enhance predictive performance, and deliver measurable societal impact through responsible and explainable artificial intelligence.
           </p>
           <p>
-            Proficient in Python, SQL, PyTorch, scikit-learn, and
-            Power BI. Experienced in NLP, data visualization, statistical
-            modeling, and building scalable analytical systems. Strong
-            foundation in OOP, algorithms, and data structures, with hands-on
-            experience developing impactful research and industry projects.
-            Maintains{" "}
-            <Link
-              href="/pages/artifacts"
-              className="text-blue-600 hover:underline font-medium"
-            >
-              open-source projects
-            </Link>
-            . Committed to continuous learning, innovation, and applying AI for
-            real-world impact.
+            Proficient in Python, PyTorch, scikit-learn, SQL, FastAPI, React, Next.js, Docker, AWS, Power BI, Git, and Linux, with expertise in Deep Learning, Computer Vision, Vision Transformers (ViTs), Large Language Models (LLMs), Multimodal AI, Explainable AI (XAI), Predictive Analytics, Time Series Forecasting, MLOps, and AI Systems Engineering. Experienced in building end-to-end AI solutions—from data acquisition and model development to API deployment and production-ready machine learning systems. Dedicated to advancing next-generation AI through interdisciplinary research and engineering, with the goal of developing impactful technologies for healthcare, smart cities, and data-driven decision support.
           </p>
         </div>
       </section>
 
       {/* ── Research Interests ── */}
-      <section className="max-w-5xl mx-auto px-6 py-12 border-b border-gray-100">
-        <h2 className="text-2xl font-light text-gray-900 border-b border-gray-200 pb-3 mb-8">
+      <section className="bg-gray-100 border-b border-gray-100">
+        <div className="max-w-5xl mx-auto px-6 py-12">
+        <h2 className="text-2xl font-bold text-gray-900 border-b border-gray-200 pb-3 mb-8">
           Research Interests
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
           {researchInterests.map((r, i) => (
             <div
               key={i}
-              className="flex gap-4 p-4 border border-gray-100 hover:border-blue-200 transition-colors duration-200"
+              className="flex gap-4 p-4 border border-gray-300 bg-white transition-colors duration-200"
             >
               <div className="p-2 bg-blue-50 rounded h-fit">{r.icon}</div>
               <div>
                 <h3 className="text-sm font-semibold text-gray-900 mb-1">
                   {r.title}
                 </h3>
-                <p className="text-sm text-gray-600 leading-relaxed">
+                <p className="text-sm text-gray-600 leading-relaxed text-justify">
                   {r.desc}
                 </p>
               </div>
             </div>
           ))}
+        </div>
         </div>
       </section>
 
@@ -306,7 +283,7 @@ export default function AboutPage() {
 
       {/* ── Research highlight ── */}
 
-      <section className="bg-slate-50 border-b border-gray-100">
+      <section className="bg-gray-100 border-b border-gray-100">
         <br /> <br />
         <div className="max-w-5xl mx-auto px-4">
           <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
@@ -318,7 +295,7 @@ export default function AboutPage() {
               </p>
 
               {/* Heading */}
-              <h2 className="text-3xl font-bold text-sky-900">
+              <h2 className="text-3xl font-bold text-gray-800">
                 Publications &amp; Research
               </h2>
 
@@ -334,7 +311,7 @@ export default function AboutPage() {
             <div className="flex-shrink-0">
               <Link
                 href="/pages/publications"
-                className="inline-flex items-center gap-2 border border-sky-900 hover:border-gray-500 text-gray-700 hover:text-gray-900 text-xs font-bold tracking-widest uppercase px-6 py-3 rounded-md transition duration-300"
+                className="inline-flex items-center gap-2 bg-gray-800 text-white hover:bg-gray-700 text-xs font-bold tracking-widest uppercase px-6 py-3 rounded-md transition duration-300"
               >
                 View Publications
                 <ArrowRight className="w-4 h-4" />
@@ -373,60 +350,101 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* ── References ── */}
+      <section className="bg-slate-50">
+        <div className="w-full bg-gray-100 py-6">
+          <div className="max-w-5xl mx-auto px-4">
+            <h2 className="text-2xl font-bold text-gray-900 border-b border-gray-200 pb-3 mb-6">
+              References
+            </h2>
+            <div className="overflow-x-auto">
+              <div className="min-w-[700px] bg-white rounded-lg shadow-sm grid grid-cols-3 divide-x divide-gray-200">
+                {[
+                  {
+                    name: "M. Jahirul Islam, PhD., PEng.",
+                    title: "Professor",
+                    dept: "Department of CSE, SUST",
+                    phone: "+8801770348185",
+                    email: "jahir-cse@sust.edu",
+                  },
+                  {
+                    name: "Dr. Ahsan Habib",
+                    title: "Associate Professor",
+                    dept: "Department of CSE, SUST",
+                    phone: "+8801915796886",
+                    email: "ahabib-iict@sust.edu",
+                  },
+                  {
+                    name: "Md. Mushtaq Shahriyar Rafee",
+                    title: "Assistant Professor & Head",
+                    dept: "Department of DS, MU",
+                    phone: "+8801785391622",
+                    email: "rafee@metrouni.edu.bd",
+                  },
+                ].map((ref, i) => (
+                  <div
+                    key={i}
+                    className="flex flex-col justify-center py-6 px-5 text-center"
+                  >
+                    <p className="text-sm font-bold text-[#1a3a4a] mb-1">
+                      {ref.name}
+                    </p>
+                    <p className="text-xs font-semibold text-gray-500 mb-0.5">
+                      {ref.title}
+                    </p>
+                    <p className="text-xs text-gray-400 mb-2">
+                      {ref.dept}
+                    </p>
+                    <div className="text-xs text-gray-500 space-y-0.5">
+                      <p>Phone: {ref.phone}</p>
+                      <p>Email: {ref.email}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ── CTA ── */}
       <section
         id="contact"
-        className="bg-slate-50 border-t relative overflow-hidden bg-gradient-to-br from-sky-900 to-sky-800 py-20 px-6 text-center"
+        className="border-b border-gray-100 bg-gray-50/50 py-14 px-6"
       >
-        {/* Background circles */}
-        <div className="absolute -top-20 -right-20 w-80 h-80 rounded-full border border-white/10" />
-        <div className="absolute -bottom-16 -left-16 w-60 h-60 rounded-full border border-white/10" />
-
-        <div className="relative z-10 max-w-2xl mx-auto">
-          {/* Heading */}
-          <h2 className="text-[clamp(1.6rem,3vw,2.2rem)] font-extrabold text-white mb-3">
-            Interested in working together?
-          </h2>
-
-          {/* Description */}
-          <p className="text-sky-200 text-sm leading-relaxed mb-8">
-            Open to full-time roles, freelance projects, and research
-            collaborations.
-          </p>
-
-          {/* Buttons */}
-          <div className="flex flex-wrap justify-center gap-3 mb-7">
-            <a
-              href="mailto:nakibuddin33@gmail.com"
-              className="px-6 py-2.5 rounded-full bg-white text-sky-900 font-bold text-sm shadow-md hover:shadow-lg transition"
+        <div className="max-w-5xl mx-auto flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+          <div className="max-w-xl">
+            <h2 className="text-2xl font-bold text-gray-900 mb-2">
+              Interested in working together?
+            </h2>
+            <p className="text-gray-500 text-sm leading-relaxed">
+              Open to full-time roles, freelance projects, and research collaborations.
+            </p>
+          </div>
+          <div className="flex flex-wrap gap-3 shrink-0">
+            <Link
+              href="/pages/contact"
+              className="px-5 py-2.5 rounded-md bg-gray-800 text-white font-bold text-sm hover:bg-gray-700 transition"
             >
               Contact Me
-            </a>
-
+            </Link>
             <a
               href="https://www.linkedin.com/in/nakib33"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-6 py-2.5 rounded-full border border-white/40 text-sky-100 font-medium text-sm hover:bg-white/10 transition"
+              className="px-5 py-2.5 rounded-md border border-gray-300 text-gray-600 font-medium text-sm hover:border-gray-400 hover:text-gray-800 transition"
             >
               LinkedIn
             </a>
-
             <a
               href="https://github.com/nakib33"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-6 py-2.5 rounded-full border border-white/40 text-sky-100 font-medium text-sm hover:bg-white/10 transition"
+              className="px-5 py-2.5 rounded-md border border-gray-300 text-gray-600 font-medium text-sm hover:border-gray-400 hover:text-gray-800 transition"
             >
               GitHub
             </a>
           </div>
-
-          {/* Footer Info */}
-          <p className="text-sky-300 text-ls">
-            📞 +880 1646-819354 &nbsp;·&nbsp; ✉ nakibuddin33@gmail.com
-            &nbsp;·&nbsp; linkedin.com/in/nakib33
-          </p>
         </div>
       </section>
     </div>

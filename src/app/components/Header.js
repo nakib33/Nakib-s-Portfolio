@@ -45,14 +45,14 @@ const Header = () => {
                         : 'bg-white border-b border-gray-200'
                 }`}
             >
-                <div className="max-w-5xl mx-auto px-6">
+                <div className="max-w-6xl mx-auto px-4">
                     <div className="flex items-center justify-between h-16">
                         {/* Logo */}
                         <Link
                             href="/"
                             className="group"
                         >
-                            <span> 
+                            <span>
                                 <div className="flex items-center gap-3">
                                     <div className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-900 text-white font-bold">
                                         NA

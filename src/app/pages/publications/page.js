@@ -66,7 +66,7 @@ const publications = [{
         "The problem of mango leaf disease is an urgent task in tropical areas. In this paper, we propose an end-to-end deep learning pipeline for eight-class mango leaf disease classification based on perceptual hash deduplication (pHash, τ=8) and leakage-free stratified partitioning for the first time. Experiments show that 739 similar images (18.48%) were removed from the initial 4,000 images by deduplication, leaving 3,261 unique images. The MambaOut-Small model demonstrated outstanding performance with a test accuracy of 99.59%, and a macro F1-score of 0.9962, outperforming the MambaOut-Base model (99.39%). For edge deployment, the MambaOut-Kobe model, containing 9.1M parameters, achieved a good balance between performance (99.18%) and model size, being more than 5.3x smaller than the largest counterpart.",
     
     pdfLink: null,
-    status: "Accepted in Conferenece",
+    status: "Accepted",
     pdfLink: "/papers/CV_Mamba.pdf",
     github: "https://github.com/nakib33/Maternal-and-Fetal-Health-Risk.git",
     keywords: [ "Maternal Health Risk", "Fetal Health Classification", "Soft Voting Ensemble", "SHAP-Based Interpretability", "Ensemble Learning", "XGBoost", "Random Forest", "Explainable Artificial Intelligence (XAI)", "Cardiotocography (CTG)", "5-Fold Stratified Cross-Validation", "Friedman Test", "Wilcoxon Signed-Rank Test", "High-Risk Pregnancy", "Blood Glucose", "Systolic Blood Pressure", "Abnormal Short-Term Variability" ],
@@ -84,7 +84,7 @@ const publications = [{
         "Developed PolyDetect, a quality-aware deep learning framework for real-time colorectal polyp segmentation in colonoscopy images. Integrated image quality assessment (IQA), adaptive image enhancement, and a hybrid Transformer–CNN architecture to improve robustness against image degradation. Achieved a Dice score of 0.8066 and IoU of 0.7262 while running at 53.62 FPS, enabling accurate and clinically applicable real-time polyp detection.",
     
     pdfLink: null,
-    status: "Submitted",
+    status: "Under Peer Review",
     pdfLink: "/papers/PolyDetect_Manuscript V1.pdf",
     github: "https://github.com/nakib33/Robust-Polyp-Segmentation.git",
     keywords:  [ "Polyp segmentation", "Colonoscopy", "Image quality assessment", "Hybrid deep learning", "PVT-v2", "Degradation robustness", "Boundary refinement", "Colorectal cancer", "Explainable AI", "PolyDetect (Proposed Framework)", "DnCNN", "U-Net", "U-Net++", "PraNet", "SANet", "Polyp-PVT", "SSFormer / SSFormer-L", "VMDU-Net", "ResNet-50", "CFFormer", "CFA-Net", "MiT-B3" ],
@@ -102,7 +102,7 @@ const publications = [{
         "Developed a lightweight CNN–Transformer framework for four-class gastrointestinal lesion risk stratification aligned with ACG and ESGE clinical guidelines. Evaluated DenseNet-121, EfficientNet-B0, and DeiT-Tiny with a novel Asymmetric Endoscopy Loss (AEL) and uncertainty estimation. Achieved Macro F1 of 0.84, zero missed high-risk lesions, and automated 44.9% of low-risk cases, improving clinically reliable AI-assisted endoscopy.",
     
     pdfLink: null,
-    status: "Submitted",
+    status: "Under Peer Review",
     pdfLink: "/papers/Gastrointestinal Endoscopy.pdf",
     github: "https://github.com/nakib33/Gastrointestinal-Endoscopy.git",
     keywords:  ["Gastrointestinal endoscopy", "Risk stratification", "Asymmetric loss function", "Lightweight neural networks", "Vision Transformer", "Monte Carlo Dropout", "HyperKvasir" ],
@@ -120,7 +120,7 @@ const publications = [{
         "Evaluated transfer learning for four-class brain tumor MRI classification using EfficientNet-B0 across varying training data sizes. Compared ImageNet-pretrained and randomly initialized models on 7,200 MRI images, showing significant gains under extreme data scarcity. Achieved strong classification performance with Grad-CAM++ explainability, providing practical insights for data-efficient AI in medical imaging.",
     
     pdfLink: null,
-    status: "Submitted",
+    status: "Under Peer Review",
     pdfLink: "/papers/Brain_Tumor_Transfer_Learning.pdf",
     github: "https://github.com/nakib33/Cross-Domain-Transfer-Learning-for-Brain-Tumor-Classification.git",
     keywords:  [ "Transfer Learning", "Brain Tumor Classification", "MRI", "EfficientNet", "Low-Data Regime", "Statistical Power", "Explainable AI", "Grad-CAM++" ],
@@ -145,7 +145,7 @@ export default function PublicationsPage() {
 
                 {/* ── Page header ── */}
                 <header className="mb-4 sm:mb-8 border-b border-gray-200 pb-3 sm:pb-5">
-                    <p className="text-xs font-medium tracking-widest uppercase text-blue-600 mb-3">
+                    <p className="text-xs font-medium tracking-widest uppercase text-gray-500 mb-3">
                         Academic Contributions
                     </p>
                     <h1 className="text-2xl sm:text-4xl font-light text-gray-900 mb-3">
@@ -165,8 +165,8 @@ export default function PublicationsPage() {
                             onClick={() => setActive(cat)}
                             className={`px-4 py-1.5 text-sm border transition-colors duration-200 ${
                                 active === cat
-                                    ? 'border-blue-600 bg-blue-600 text-white'
-                                    : 'border-gray-200 text-gray-600 hover:border-blue-300 hover:text-blue-600'
+                                    ? 'border-gray-800 bg-gray-800 text-white'
+                                    : 'border-gray-200 text-gray-600 hover:border-gray-400 hover:text-gray-800'
                             }`}
                         >
                             {cat}
@@ -176,10 +176,17 @@ export default function PublicationsPage() {
 
                 {/* ── Publications list ── */}
                 <div className="space-y-4 sm:space-y-6">
-                    {filtered.map((pub, i) => (
+                    {filtered.map((pub, i) => {
+                        const statusStyle =
+                            pub.status === "Under Peer Review"
+                                ? "bg-yellow-50 text-yellow-700 border-yellow-100"
+                                : pub.status === "Accepted"
+                                ? "bg-green-50 text-green-700 border-green-100"
+                                : "bg-gray-800 text-white border-gray-600";
+                        return (
                         <article
                             key={i}
-                            className="border border-gray-200 p-4 sm:p-6 hover:border-blue-200 hover:shadow-sm transition-all duration-200"
+                            className="border border-gray-200 p-4 sm:p-6 hover:border-gray-400 hover:shadow-sm transition-all duration-200"
                         >
                             <div className="flex flex-col md:flex-row md:items-start gap-4 sm:gap-6">
 
@@ -187,10 +194,10 @@ export default function PublicationsPage() {
                                 <div className="flex-1">
                                     {/* Badges */}
                                     <div className="flex flex-wrap gap-2 mb-3">
-                                        <span className="text-xs px-2 py-0.5 bg-blue-50 text-blue-700 border border-blue-100">
+                                        <span className="text-xs px-2 py-0.5 bg-gray-100 text-gray-700 border border-gray-200">
                                             {pub.category}
                                         </span>
-                                        <span className="text-xs px-2 py-0.5 bg-green-50 text-green-700 border border-green-100">
+                                        <span className={`text-xs px-2 py-0.5 border ${statusStyle}`}>
                                             {pub.status}
                                         </span>
                                     </div>
@@ -240,7 +247,7 @@ export default function PublicationsPage() {
                                             href={pub.pdfLink}
                                             target="_blank"
                                             rel="noopener noreferrer"
-                                            className="inline-flex items-center gap-1.5 text-sm text-blue-600 hover:text-white border border-blue-200 hover:bg-blue-600 hover:border-blue-600 px-3 py-1.5 transition-colors duration-200"
+                                            className="inline-flex items-center gap-1.5 text-sm text-gray-600 hover:text-white border border-gray-200 hover:bg-gray-800 hover:border-gray-800 px-3 py-1.5 transition-colors duration-200"
                                         >
                                             <Download className="w-3.5 h-3.5" />
                                             PDF
@@ -261,7 +268,8 @@ export default function PublicationsPage() {
                                 </div>
                             </div>
                         </article>
-                    ))}
+                        );
+                    })}
 
                     {filtered.length === 0 && (
                         <div className="text-center py-20 text-gray-400">
@@ -283,7 +291,7 @@ export default function PublicationsPage() {
                     </div>
                     <Link
                         href="/pages/contact"
-                        className="inline-flex items-center gap-2 border border-blue-600 text-blue-600 px-6 py-3 text-sm font-medium hover:bg-blue-600 hover:text-white transition-all duration-200 shrink-0"
+                        className="inline-flex items-center gap-2 border border-gray-800 text-gray-800 px-6 py-3 text-sm font-medium hover:bg-gray-800 hover:text-white transition-all duration-200 shrink-0"
                     >
                         Get In Touch <ArrowRight className="w-4 h-4" />
                     </Link>

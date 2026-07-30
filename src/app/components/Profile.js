@@ -1,6 +1,6 @@
 'use client';
 import React from "react";
-import { Facebook, Github, Instagram, Linkedin, Mail, MapPin, Phone, Twitter } from 'lucide-react';
+import { Github, GraduationCap, Instagram, Linkedin, Mail, MapPin, Phone } from 'lucide-react';
 
 const Profile = () => {
     const stats = [
@@ -56,9 +56,7 @@ const Profile = () => {
                                 { icon: <Linkedin className="w-4 h-4" />, label: 'LinkedIn', link: 'https://www.linkedin.com/in/nakib33/', hover: 'blue-600' },
                                 { icon: <Github className="w-4 h-4" />, label: 'GitHub', link: 'https://github.com/nakib33', hover: 'gray-900' },
                                 { icon: <Instagram className="w-4 h-4" />, label: 'Instagram', link: 'https://www.instagram.com/_nakiib_/', hover: 'pink-600' },
-                                { icon: <Facebook className="w-4 h-4" />, label: 'Facebook', link: 'https://www.facebook.com/nakibuddinahmed0304', hover: 'blue-600' },
-                                { icon: <Twitter className="w-4 h-4" />, label: 'X', link: 'https://www.twitter.com/nakibuddinahmed0304', hover: 'stone-900' },
-                                { icon: null, label: 'Leetcode', link: 'https://leetcode.com/u/nakib33/', hover: 'orange-600' },
+                                { icon: <GraduationCap className="w-4 h-4" />, label: 'Google Scholar', link: 'https://scholar.google.com/citations?user=PLACEHOLDER', hover: 'blue-700' },
                             ].map((s, i) => (
                                 <a
                                     key={i}

@@ -4,9 +4,9 @@ import { BookUser, Shield, Code } from 'lucide-react';
 const Experience = () => {
     const experienceDetails = [
         {
-            icon: <Code className="w-6 h-6 text-blue-600" />,
+            icon: <Code className="w-6 h-6 text-[#1a3a4a]" />,
             title: "Executive, Data Analyst",
-            company: "Zeuz",
+            company: "Bionic, Bangladesh",
             type: "Full Time",
             location: "Sylhet, Bangladesh",
             period: "January 2025 – Running",
@@ -18,9 +18,9 @@ const Experience = () => {
             ]
         },
         {
-            icon: <BookUser className="w-6 h-6 text-blue-600" />,
+            icon: <BookUser className="w-6 h-6 text-[#1a3a4a]" />,
             title: "Web Developer and CRM Administrator",
-            company: "AnTech Innovation & Global Education Care",
+            company: "Global Education Care",
             type: "Full Time",
             location: "Sylhet, Bangladesh",
             period: "July 2023 – December 2024",
@@ -32,10 +32,10 @@ const Experience = () => {
             ]
         },
         {
-            icon: <Shield className="w-6 h-6 text-blue-600" />,
-            title: "Machine Learning Engineer",
+            icon: <Shield className="w-6 h-6 text-[#1a3a4a]" />,
+            title: "Machine Learning Engineer (Internship)",
             company: "DataSoft Systems Bangladesh Limited",
-            type: "Casual",
+            type: "University Based",
             location: "Remote",
             period: "June 2023 – November 2024",
             responsibilities: [
@@ -46,7 +46,7 @@ const Experience = () => {
             ]
         },
         {
-            icon: <Shield className="w-6 h-6 text-blue-600" />,
+            icon: <Shield className="w-6 h-6 text-[#1a3a4a]" />,
             title: "IT Instructor and IT Support Technician",
             company: "UCEP BANGLADESH",
             type: "Full Time",
@@ -65,7 +65,7 @@ const Experience = () => {
         <section id="experience" className="max-w-5xl mx-auto px-6 py-12">
             <div className="bg-white">
                 <header className="mb-6">
-                    <h2 className="text-2xl font-light text-gray-900 border-b border-gray-200 pb-3">
+                    <h2 className="text-2xl font-bold text-gray-900 border-b border-gray-200 pb-3">
                         Professional Experience
                     </h2>
                 </header>
@@ -81,7 +81,7 @@ const Experience = () => {
                                     <h3 className="text-xl font-medium text-gray-900 mb-1">
                                         {exp.title}
                                     </h3>
-                                    <p className="text-blue-600 font-medium mb-1">{exp.company}</p>
+                                    <p className="text-[#1a3a4a] font-medium mb-1">{exp.company}</p>
                                     <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-sm text-gray-500 mb-4">
                                         <span>{exp.period}</span>
                                         <span className="text-gray-300">·</span>
