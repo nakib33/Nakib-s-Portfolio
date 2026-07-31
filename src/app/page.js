@@ -181,7 +181,7 @@ const HomePage = () => {
               ].map((tag) => (
                 <span
                   key={tag}
-                  className="font-mono text-[10px] tracking-widest uppercase px-3 py-1 border border-gray-800 text-white font-bold rounded-sm bg-gray-800"
+                  className="font-mono text-[10px] tracking-widest uppercase px-3 py-1 border border-gray-300 text-gray-700 font-bold rounded-sm bg-gray-100"
                 >
                   {tag}
                 </span>
