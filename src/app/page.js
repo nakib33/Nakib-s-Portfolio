@@ -165,7 +165,7 @@ const HomePage = () => {
   return (
     <div className="min-h-screen bg-white">
       {/* ── Hero ── */}
-      <section className="max-w-6xl mx-auto px-2 sm:px-4 py-8 lg:py-14">
+      <section className="max-w-6xl mx-auto px-4 sm:px-6 py-8 lg:py-14">
         {/* Background Grid */}
         <div className="linear-gradient(90deg,rgba(0,0,0,0.04)_1px,transparent_1px)] bg-[size:60px_60px]" />
 
@@ -275,7 +275,7 @@ const HomePage = () => {
 
           {/* PART B — Bio + Education + Buttons (below image on mobile, left column on desktop) */}
           <div className="md:col-start-1 md:row-start-2">
-            <p className="text-gray-600 mb-4 text-base md:text-lg leading-relaxed">
+            <p className="text-gray-600 mb-4 text-base md:text-lg leading-relaxed text-justify">
               <strong className="text-gray-700 font-semibold">
                 AI researcher
               </strong>{" "}
@@ -290,7 +290,7 @@ const HomePage = () => {
               Deep Learning, Computer Vision, NLP, Multimodal AI, and
               AI for Healthcare.
             </p>
-            <p className="text-gray-600 mb-4 text-base md:text-lg leading-relaxed">
+            <p className="text-gray-600 mb-4 text-base md:text-lg leading-relaxed text-justify">
               Beyond research, builds production-ready AI applications using{" "}
               <strong className="text-gray-700 font-semibold">
                 PyTorch, FastAPI, React, Next.js, Docker, and AWS
@@ -351,7 +351,7 @@ const HomePage = () => {
 
       {/* ── Quick Links / Learn More ── */}
       <section id="info" className="border-y border-gray-100 bg-gray-50/50">
-        <div className="max-w-6xl mx-auto px-2 sm:px-4 py-12 text-center">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 py-12 text-center">
           <p className="text-xl font-bold text-gray-900 mb-8">
             Learn more about my
           </p>
@@ -392,7 +392,7 @@ const HomePage = () => {
 
       {/* ── Areas of Interest ── */}
       <section className="border-b border-gray-100 bg-white">
-        <div className="max-w-6xl mx-auto px-2 sm:px-4 py-10">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 py-10">
           <h2 className="text-xl font-bold text-gray-900 mb-6">
             Areas of Interest
           </h2>
@@ -413,7 +413,7 @@ const HomePage = () => {
 
       {/* ── Skills ── */}
       <section className="border-b border-gray-100">
-        <div className="max-w-6xl mx-auto px-2 sm:px-4 py-6 sm:py-10">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 py-6 sm:py-10">
           <h2 className="text-xl font-bold text-gray-900 mb-6">
             Technologies &amp; Tools
           </h2>
@@ -472,7 +472,7 @@ const HomePage = () => {
 
       {/* ── Featured Projects ── */}
       <section className="border-b border-gray-100 bg-white">
-        <div className="max-w-6xl mx-auto px-2 sm:px-4 py-6 sm:py-12">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 py-6 sm:py-12">
           <div className="flex items-center justify-between mb-6">
             <h2 className="text-xl font-bold text-gray-900">
               Featured Projects
@@ -551,7 +551,7 @@ const HomePage = () => {
 
       {/* ── CTA ── */}
       <section className="border-t border-gray-100 bg-white">
-        <div className="max-w-6xl mx-auto px-2 sm:px-4 py-8 md:py-10">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 py-8 md:py-10">
           <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
             <div className="max-w-xl">
               <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-2">
@@ -564,7 +564,7 @@ const HomePage = () => {
             </div>
             <Link
               href="/pages/contact"
-              className="inline-flex items-center gap-2 bg-gray-800 hover:bg-gray-700 text-white text-sm font-medium px-7 py-3 rounded-md transition-all duration-200 shrink-0"
+              className="inline-flex items-center gap-2 bg-gray-800 hover:bg-gray-700 text-white text-sm font-medium px-7 py-3 rounded-md transition-all duration-200 shrink-0 w-fit"
             >
               Get In Touch
               <ArrowRight className="w-4 h-4" />

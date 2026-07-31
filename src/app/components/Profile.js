@@ -10,7 +10,7 @@ const Profile = () => {
     ];
 
     return (
-        <div className="bg-slate-50 border-b border-gray-200">
+        <div className="bg-white border-b border-gray-200">
             <div className="max-w-5xl mx-auto px-4 sm:px-6 py-10 sm:py-12">
                 <div className="flex flex-col lg:flex-row items-center lg:items-start gap-6 sm:gap-8">
 
@@ -30,7 +30,7 @@ const Profile = () => {
                         <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-950 mb-1 tracking-wide">
                             Nakib Uddin Ahmed
                         </h1>
-                        <p className="text-base sm:text-lg lg:text-xl text-sky-800 font-normal mb-3">
+                        <p className="text-base sm:text-lg lg:text-xl text-gray-800 font-normal mb-3">
                             Full-Stack AI Engineer & Data Scientist
                         </p>
 
@@ -55,7 +55,7 @@ const Profile = () => {
                             {[
                                 { icon: <Linkedin className="w-4 h-4" />, label: 'LinkedIn', link: 'https://www.linkedin.com/in/nakib33/', hover: 'blue-600' },
                                 { icon: <Github className="w-4 h-4" />, label: 'GitHub', link: 'https://github.com/nakib33', hover: 'gray-900' },
-                                { icon: <Instagram className="w-4 h-4" />, label: 'Instagram', link: 'https://www.instagram.com/_nakiib_/', hover: 'pink-600' },
+                                { icon: <Instagram className="w-4 h-4" />, label: 'Instagram', link: 'https://www.instagram.com/_nakiib_/', hover: 'orange-600' },
                                 { icon: <GraduationCap className="w-4 h-4" />, label: 'Google Scholar', link: 'https://scholar.google.com/citations?user=PLACEHOLDER', hover: 'blue-700' },
                             ].map((s, i) => (
                                 <a

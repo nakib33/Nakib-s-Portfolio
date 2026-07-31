@@ -157,10 +157,10 @@ const researchInterests = [
 
 const highlights = [
   { number: "50+", label: "PROJECTS COMPLETED" },
-  { number: "7+", label: "RESEARCH PUBLICATIONS" },
+  { number: "7+", label: "RESEARCH WORK" },
   { number: "3+", label: "YEARS OF EXPERIENCE" },
   { number: "8+", label: "CERTIFIED SKILLS" },
-  { number: "3.69", label: "B.SC GPA" },
+  { number: "3.88", label: "MIT CGPA" },
   { number: "99.44", label: "BEST MODEL ACCURACY" },
 ];
 
@@ -281,45 +281,58 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* ── Research highlight ── */}
-
-      <section className="bg-gray-100 border-b border-gray-100">
-        <br /> <br />
-        <div className="max-w-5xl mx-auto px-4">
-          <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
-            {/* ===== LEFT SIDE ===== */}
-            <div className="flex flex-col gap-3 max-w-sm">
-              {/* Small Label */}
-              <p className="text-lg font-semibold tracking-widest text-gray-400 uppercase">
+      {/* ── Research / Publications ── */}
+      <section className="border-y border-gray-100 bg-gray-50/50">
+        <div className="max-w-5xl mx-auto px-6 py-12">
+          {/* Section header */}
+          <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6 mb-8">
+            <div>
+              <p className="text-sm font-medium text-gray-500 mb-1">
                 Research
               </p>
-
-              {/* Heading */}
-              <h2 className="text-3xl font-bold text-gray-800">
+              <h2 className="text-2xl font-bold text-gray-900">
                 Publications &amp; Research
               </h2>
-
-              {/* Description */}
-              <p className="text-sm text-gray-500 leading-relaxed">
-                Exploring ML applications in astronomy and applied AI systems.
-                Author of peer-reviewed papers on machine learning and applied
-                AI.
-              </p>
             </div>
+            <Link
+              href="/pages/publications"
+              className="inline-flex items-center gap-2 border border-gray-800 hover:bg-gray-800 text-gray-700 hover:text-white text-xs font-semibold tracking-widest uppercase px-5 py-2.5 rounded-md transition duration-300"
+            >
+              View All Publications
+              <ArrowRight className="w-3.5 h-3.5" />
+            </Link>
+          </div>
 
-            {/* ===== RIGHT SIDE - Button ===== */}
-            <div className="flex-shrink-0">
-              <Link
-                href="/pages/publications"
-                className="inline-flex items-center gap-2 bg-gray-800 text-white hover:bg-gray-700 text-xs font-bold tracking-widest uppercase px-6 py-3 rounded-md transition duration-300"
+          {/* Paper list in short form */}
+          <div className="space-y-2">
+            {[
+              { title: "AI-Driven Housing Affordability Forecasting in New York City", venue: "Springer — Applied Spatial Analysis and Policy", year: 2026 },
+              { title: "Enhancing Online Recruitment Fraud Detection Using Gradient Boosting & Transformers", venue: "IJCA", year: 2026 },
+              { title: "CV-Mamba: Gated CNN Transfer Learning for Mango Leaf Disease Detection", venue: "Frontiers", year: 2025 },
+              { title: "Soft Voting Ensemble Learning for Maternal & Fetal Health Risk Stratification", venue: "IEEE Xplore", year: 2026 },
+              { title: "PolyDetect: Hybrid Deep Learning for Robust Polyp Segmentation", venue: "Science Direct — IJMI", year: 2026 },
+              { title: "Four-Class GI Risk Stratification Using Lightweight CNN–Transformer", venue: "Springer — MBEC", year: 2026 },
+              { title: "Cross-Domain Transfer Learning for Brain Tumor Classification Under Limited MRI Data", venue: "Springer — MBEC", year: 2026 },
+            ].map((pub, i) => (
+              <div
+                key={i}
+                className="bg-white border border-gray-200 px-5 py-3 rounded-md hover:border-gray-300 hover:shadow-sm transition-all duration-200 flex items-center justify-between gap-4"
               >
-                View Publications
-                <ArrowRight className="w-4 h-4" />
-              </Link>
-            </div>
+                <div className="flex items-center gap-3 min-w-0">
+                  <span className="text-xs text-gray-400 font-mono w-7 shrink-0">
+                    &apos;{String(pub.year).slice(2)}
+                  </span>
+                  <p className="text-sm text-gray-800 font-medium truncate">
+                    {pub.title}
+                  </p>
+                </div>
+                <span className="text-[10px] text-gray-400 uppercase tracking-wider shrink-0 hidden sm:inline font-medium">
+                  {pub.venue}
+                </span>
+              </div>
+            ))}
           </div>
         </div>
-        <br /> <br />
       </section>
 
       {/* ── Certifications ── */}

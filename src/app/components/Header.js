@@ -39,10 +39,10 @@ const Header = () => {
     return (
         <>
             <nav
-                className={`top-0 w-full z-50 transition-all duration-300 ${
+                className={`sticky top-0 w-full z-50 transition-all duration-500 ${
                     scrolled
-                        ? 'bg-white/95 backdrop-blur-sm shadow-sm border-b border-gray-200'
-                        : 'bg-white border-b border-gray-200'
+                        ? 'bg-white/80 backdrop-blur-md shadow-md border-b border-gray-200'
+                        : 'bg-white/60 backdrop-blur-sm border-b border-gray-200'
                 }`}
             >
                 <div className="max-w-6xl mx-auto px-4">
@@ -70,10 +70,10 @@ const Header = () => {
                                 <Link
                                     key={item.path}
                                     href={item.path}
-                                    className={`text-sm font-normal transition-colors duration-200 ${
+                                    className={`text-sm transition-colors duration-200 ${
                                         isActive(item.path)
-                                            ? 'text-blue-600'
-                                            : 'text-gray-600 hover:text-blue-600'
+                                            ? 'text-gray-900 font-bold'
+                                            : 'text-gray-600 hover:text-gray-900 hover:font-bold'
                                     }`}
                                 >
                                     {item.label}
@@ -124,10 +124,10 @@ const Header = () => {
                                     <Link
                                         key={item.path}
                                         href={item.path}
-                                        className={`flex items-center gap-3 px-3 py-3 text-sm font-normal transition-colors duration-200 rounded ${
+                                        className={`flex items-center gap-3 px-3 py-3 text-sm transition-colors duration-200 rounded ${
                                             isActive(item.path)
-                                                ? 'text-blue-600 bg-blue-50'
-                                                : 'text-gray-600 hover:text-blue-600 hover:bg-gray-50'
+                                                ? 'text-gray-900 font-bold bg-gray-50'
+                                                : 'text-gray-600 hover:text-gray-900 hover:font-bold hover:bg-gray-50'
                                         }`}
                                     >
                                         <Icon className="w-4 h-4" />

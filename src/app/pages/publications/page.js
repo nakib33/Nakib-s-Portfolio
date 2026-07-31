@@ -12,28 +12,67 @@ const publications = [{
     category: "Machine Learning",
     abstract:
         "Developed an explainable AI framework to predict severe housing cost burden across New York City neighborhoods using socio-economic, housing, and rental market data (2012–2022). Evaluated Random Forest, XGBoost, and LightGBM, with LightGBM achieving the best performance (R²: 0.93, RMSE: 0.0337). Applied SHAP explainability to identify key affordability drivers, providing data-driven insights for housing policy and urban planning.",
-    
+
     pdfLink: null,
     status: "Published",
     pdfLink: "/papers/AI-Driven Housing Affordability Forecasting.pdf",
     github: "https://github.com/nakib33/AI-Driven-Housing-Affordability-Forecasting-in-NYC.git",
+    journalLink: "https://link.springer.com/article/10.1007/s12061-026-09955-4",
     keywords: [ "Housing Affordability", "Machine Learning", "SHAP Explainability", "New York City", "Neighborhood Tabulation Area", "LightGBM", "XGBoost", "Random Forest", "Ensemble Learning", "ACS", "Spatial Autocorrelation", "Rent Burden", "Time-Series CV" ],
 },
 
 {
-    title: "Enhancing Online Recruitment Fraud Detection: A Comparative Analysis of Gradient Boosting and Transformer Architectures Under Severe Class Imbalance",
+    title: "Beyond Binary: Four-Class Risk Stratification from Gastrointestinal Endoscopy Using Asymmetric-Cost Lightweight CNN–Transformer Learnings",
+    authors: ["Nakib Uddin Ahmed, Azizur Rahman, Mehjabin Ferdous"],
+    year: 2026,
+    venue: "Springer - Medical & Biological Engineering & Computing",
+    venueShort: "MBEC 2026",
+    category: "Healthcare AI",
+    abstract:
+        "Developed a lightweight CNN–Transformer framework for four-class gastrointestinal lesion risk stratification aligned with ACG and ESGE clinical guidelines. Evaluated DenseNet-121, EfficientNet-B0, and DeiT-Tiny with a novel Asymmetric Endoscopy Loss (AEL) and uncertainty estimation. Achieved Macro F1 of 0.84, zero missed high-risk lesions, and automated 44.9% of low-risk cases, improving clinically reliable AI-assisted endoscopy.",
+
+    pdfLink: null,
+    status: "Under Peer Review",
+    pdfLink: "/papers/Gastrointestinal Endoscopy.pdf",
+    github: "https://github.com/nakib33/Gastrointestinal-Endoscopy.git",
+    journalLink: "https://www.researchgate.net/publication/410925705_Beyond_Binary_Four-Class_Risk_Stratification_from_Gastrointestinal_Endoscopy_Using_Asymmetric-Cost_Lightweight_CNN-Transformer_Learning",
+    keywords:  ["Gastrointestinal endoscopy", "Risk stratification", "Asymmetric loss function", "Lightweight neural networks", "Vision Transformer", "Monte Carlo Dropout", "HyperKvasir" ],
+},
+
+
+{
+    title: "PolyDetect: A Quality-Aware Hybrid Deep Learning Framework for Robust Polyp Segmentation in Degraded Colonoscopy Images",
     authors: ["Nakib Uddin Ahmed, Azizur Rahman"],
     year: 2026,
+    venue: "Science Direct - International Journal of Medical Informatics",
+    venueShort: "IJMI 2026",
+    category: "Computer Vision",
+    abstract:
+        "Developed PolyDetect, a quality-aware deep learning framework for real-time colorectal polyp segmentation in colonoscopy images. Integrated image quality assessment (IQA), adaptive image enhancement, and a hybrid Transformer–CNN architecture to improve robustness against image degradation. Achieved a Dice score of 0.8066 and IoU of 0.7262 while running at 53.62 FPS, enabling accurate and clinically applicable real-time polyp detection.",
+
+    pdfLink: null,
+    status: "Under Peer Review",
+    pdfLink: "/papers/PolyDetect_Manuscript V1.pdf",
+    github: "https://github.com/nakib33/Robust-Polyp-Segmentation.git",
+    keywords:  [ "Polyp segmentation", "Colonoscopy", "Image quality assessment", "Hybrid deep learning", "PVT-v2", "Degradation robustness", "Boundary refinement", "Colorectal cancer" ],
+},
+
+
+{
+    title: "Enhancing Online Recruitment Fraud Detection: A Comparative Analysis of Gradient Boosting and Transformer Architectures Under Severe Class Imbalance",
+    authors: ["Nakib Uddin Ahmed, Azizur Rahman"],
+    year: 2024,
     venue: "International Journal of Computer Applications",
     venueShort: "IJCA 2024",
     category: "Machine Learning",
     abstract:
         "Developed an AI-based fraudulent job posting detection system using Machine Learning, Deep Learning, and Transformer models on a dataset of 17,883 job advertisements. Applied advanced text preprocessing, Word2Vec embeddings, and SMOTE to address class imbalance. Achieved 99.44% accuracy with XGBoost (F1-score: 0.99), demonstrating the effectiveness of ensemble learning and transformer-based approaches for detecting online recruitment fraud.",
-    
+
     pdfLink: null,
     status: "Published",
     pdfLink: "/papers/Enhancing Online Recruitment Fraud Detection.pdf",
     github: "https://github.com/nakib33/Enhancing-Online-Recruitment-Fraud-Detection.git",
+    journalLink: "https://www.ijcaonline.org/archives/volume187/number91/enhancing-online-recruitment-fraud-detection-a-comparative-analysis-of-gradient-boosting-and-transformer-architectures-under-severe-class-imbalance/",
     keywords: ["Online Recruitment Fraud", "NLP", "SMOTE", "XGBoost", "BERT", "Deep Learning"],
 },
 
@@ -46,66 +85,12 @@ const publications = [{
     category: "Computer Vision",
     abstract:
         "The problem of mango leaf disease is an urgent task in tropical areas. In this paper, we propose an end-to-end deep learning pipeline for eight-class mango leaf disease classification based on perceptual hash deduplication (pHash, τ=8) and leakage-free stratified partitioning for the first time. Experiments show that 739 similar images (18.48%) were removed from the initial 4,000 images by deduplication, leaving 3,261 unique images. The MambaOut-Small model demonstrated outstanding performance with a test accuracy of 99.59%, and a macro F1-score of 0.9962, outperforming the MambaOut-Base model (99.39%). For edge deployment, the MambaOut-Kobe model, containing 9.1M parameters, achieved a good balance between performance (99.18%) and model size, being more than 5.3x smaller than the largest counterpart.",
-    
+
     pdfLink: null,
     status: "Accepted",
     pdfLink: "/papers/CV_Mamba.pdf",
     github: "https://github.com/nakib33/CV-Mamba-Gated-CNN-Transfer-Learning.git",
     keywords: [ "Mango Leaf Disease", "MambaOut", "Gated CNN", "Transfer Learning", "pHash Deduplication", "Leakage-Free Partitioning", "Plant Disease Detection", "Computer Vision", "Agricultural AI" ],
-},
-
-
-{
-    title: "Soft Voting Ensemble Learning and SHAP-Based Interpretability for Maternal and Fetal Health Risk Stratification Across Multiple Clinical Datasets",
-    authors: ["Nakib Uddin Ahmed"],
-    year: 2026,
-    venue: "IEEE Xplore",
-    venueShort: "IEEE Xplore 2026",
-    category: "Healthcare AI",
-    abstract:
-        "The problem of mango leaf disease is an urgent task in tropical areas. In this paper, we propose an end-to-end deep learning pipeline for eight-class mango leaf disease classification based on perceptual hash deduplication (pHash, τ=8) and leakage-free stratified partitioning for the first time. Experiments show that 739 similar images (18.48%) were removed from the initial 4,000 images by deduplication, leaving 3,261 unique images. The MambaOut-Small model demonstrated outstanding performance with a test accuracy of 99.59%, and a macro F1-score of 0.9962, outperforming the MambaOut-Base model (99.39%). For edge deployment, the MambaOut-Kobe model, containing 9.1M parameters, achieved a good balance between performance (99.18%) and model size, being more than 5.3x smaller than the largest counterpart.",
-    
-    pdfLink: null,
-    status: "Accepted",
-    pdfLink: "/papers/CV_Mamba.pdf",
-    github: "https://github.com/nakib33/Maternal-and-Fetal-Health-Risk.git",
-    keywords: [ "Maternal Health Risk", "Fetal Health Classification", "Soft Voting Ensemble", "SHAP-Based Interpretability", "Ensemble Learning", "XGBoost", "Random Forest", "Explainable Artificial Intelligence (XAI)", "Cardiotocography (CTG)", "5-Fold Stratified Cross-Validation", "Friedman Test", "Wilcoxon Signed-Rank Test", "High-Risk Pregnancy", "Blood Glucose", "Systolic Blood Pressure", "Abnormal Short-Term Variability" ],
-},
-    
-
-{
-    title: "PolyDetect: A Quality-Aware Hybrid Deep Learning Framework for Robust Polyp Segmentation in Degraded Colonoscopy Images",
-    authors: ["Nakib Uddin Ahmed, Azizur Rahman"],
-    year: 2026,
-    venue: "Science Direct - International Journal of Medical Informatics",
-    venueShort: "IJMI 2026",
-    category: "Computer Vision",
-    abstract:
-        "Developed PolyDetect, a quality-aware deep learning framework for real-time colorectal polyp segmentation in colonoscopy images. Integrated image quality assessment (IQA), adaptive image enhancement, and a hybrid Transformer–CNN architecture to improve robustness against image degradation. Achieved a Dice score of 0.8066 and IoU of 0.7262 while running at 53.62 FPS, enabling accurate and clinically applicable real-time polyp detection.",
-    
-    pdfLink: null,
-    status: "Under Peer Review",
-    pdfLink: "/papers/PolyDetect_Manuscript V1.pdf",
-    github: "https://github.com/nakib33/Robust-Polyp-Segmentation.git",
-    keywords:  [ "Polyp segmentation", "Colonoscopy", "Image quality assessment", "Hybrid deep learning", "PVT-v2", "Degradation robustness", "Boundary refinement", "Colorectal cancer", "Explainable AI", "PolyDetect (Proposed Framework)", "DnCNN", "U-Net", "U-Net++", "PraNet", "SANet", "Polyp-PVT", "SSFormer / SSFormer-L", "VMDU-Net", "ResNet-50", "CFFormer", "CFA-Net", "MiT-B3" ],
-},
-
-
-{
-    title: "Beyond Binary: Four-Class Risk Stratification from Gastrointestinal Endoscopy Using Asymmetric-Cost Lightweight CNN–Transformer Learnings",
-    authors: ["Nakib Uddin Ahmed, Azizur Rahman, Mehjabin Ferdous"],
-    year: 2026,
-    venue: "Springer - Medical & Biological Engineering & Computing",
-    venueShort: "MBEC 2026",
-    category: "Healthcare AI",
-    abstract:
-        "Developed a lightweight CNN–Transformer framework for four-class gastrointestinal lesion risk stratification aligned with ACG and ESGE clinical guidelines. Evaluated DenseNet-121, EfficientNet-B0, and DeiT-Tiny with a novel Asymmetric Endoscopy Loss (AEL) and uncertainty estimation. Achieved Macro F1 of 0.84, zero missed high-risk lesions, and automated 44.9% of low-risk cases, improving clinically reliable AI-assisted endoscopy.",
-    
-    pdfLink: null,
-    status: "Under Peer Review",
-    pdfLink: "/papers/Gastrointestinal Endoscopy.pdf",
-    github: "https://github.com/nakib33/Gastrointestinal-Endoscopy.git",
-    keywords:  ["Gastrointestinal endoscopy", "Risk stratification", "Asymmetric loss function", "Lightweight neural networks", "Vision Transformer", "Monte Carlo Dropout", "HyperKvasir" ],
 },
 
 
@@ -118,12 +103,30 @@ const publications = [{
     category: "Healthcare AI",
     abstract:
         "Evaluated transfer learning for four-class brain tumor MRI classification using EfficientNet-B0 across varying training data sizes. Compared ImageNet-pretrained and randomly initialized models on 7,200 MRI images, showing significant gains under extreme data scarcity. Achieved strong classification performance with Grad-CAM++ explainability, providing practical insights for data-efficient AI in medical imaging.",
-    
+
     pdfLink: null,
     status: "Under Peer Review",
     pdfLink: "/papers/Brain_Tumor_Transfer_Learning.pdf",
     github: "https://github.com/nakib33/Cross-Domain-Transfer-Learning-for-Brain-Tumor-Classification.git",
     keywords:  [ "Transfer Learning", "Brain Tumor Classification", "MRI", "EfficientNet", "Low-Data Regime", "Statistical Power", "Explainable AI", "Grad-CAM++" ],
+},
+
+
+{
+    title: "Soft Voting Ensemble Learning and SHAP-Based Interpretability for Maternal and Fetal Health Risk Stratification Across Multiple Clinical Datasets",
+    authors: ["Nakib Uddin Ahmed"],
+    year: 2026,
+    venue: "IEEE Xplore",
+    venueShort: "IEEE Xplore 2026",
+    category: "Healthcare AI",
+    abstract:
+        "The problem of mango leaf disease is an urgent task in tropical areas. In this paper, we propose an end-to-end deep learning pipeline for eight-class mango leaf disease classification based on perceptual hash deduplication (pHash, τ=8) and leakage-free stratified partitioning for the first time. Experiments show that 739 similar images (18.48%) were removed from the initial 4,000 images by deduplication, leaving 3,261 unique images. The MambaOut-Small model demonstrated outstanding performance with a test accuracy of 99.59%, and a macro F1-score of 0.9962, outperforming the MambaOut-Base model (99.39%). For edge deployment, the MambaOut-Kobe model, containing 9.1M parameters, achieved a good balance between performance (99.18%) and model size, being more than 5.3x smaller than the largest counterpart.",
+
+    pdfLink: null,
+    status: "Accepted",
+    pdfLink: "/papers/CV_Mamba.pdf",
+    github: "https://github.com/nakib33/Maternal-and-Fetal-Health-Risk.git",
+    keywords: [ "Maternal Health Risk", "Fetal Health Classification", "Soft Voting Ensemble", "SHAP-Based Interpretability", "Ensemble Learning", "XGBoost", "Random Forest", "Explainable Artificial Intelligence (XAI)", "Cardiotocography (CTG)", "5-Fold Stratified Cross-Validation", "Friedman Test", "Wilcoxon Signed-Rank Test", "High-Risk Pregnancy", "Blood Glucose", "Systolic Blood Pressure", "Abnormal Short-Term Variability" ],
 },
 
 
@@ -264,7 +267,18 @@ export default function PublicationsPage() {
                                             Code
                                         </a>
                                     )}
-                                    
+                                    {pub.journalLink && (
+                                        <a
+                                            href={pub.journalLink}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="inline-flex items-center gap-1.5 text-sm text-gray-600 hover:text-white border border-gray-200 hover:bg-gray-800 hover:border-gray-800 px-3 py-1.5 transition-colors duration-200"
+                                        >
+                                            <Globe className="w-3.5 h-3.5" />
+                                            Journal
+                                        </a>
+                                    )}
+
                                 </div>
                             </div>
                         </article>
