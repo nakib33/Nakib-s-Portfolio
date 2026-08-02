@@ -1,5 +1,5 @@
 import React from 'react';
-import { GraduationCap, BookOpen } from 'lucide-react';
+import { BookOpen } from 'lucide-react';
 
 const Education = () => {
     const educationDetails = [
@@ -8,8 +8,10 @@ const Education = () => {
             degree: "Masters in Information Technology",
             institution: "Shahjalal University of Science and Technology (SUST)",
             period: "2023 – 2025",
-            gpa: "3.88",
-            description: "Advanced coursework and research in information technology, focusing on machine learning, artificial intelligence, and data-driven solutions for real-world challenges.",
+            gpa: "3.88/4.00",
+            coursework: "Machine Learning, Artificial Intelligence, Model Development, Python Algorithms, Data Science, Deep Learning, Database Systems, Information Systems.",
+            projectLabel: "Industry-Sponsored Internship & Final Year Project:",
+            project: "Stock Trend Prediction Using Bangla News Analysis during an M.Sc. industry internship at DataSoft Systems Bangladesh Limited, one of Bangladesh's leading technology companies.",
             icon: <BookOpen className="w-5 h-5 text-white" />
         },
         {
@@ -17,8 +19,10 @@ const Education = () => {
             degree: "Bachelor of Science in Computer Science and Engineering",
             institution: "Metropolitan University",
             period: "2018 – 2022",
-            gpa: "3.69",
-            description: "Specialized in backend development and software engineering, with a focus on programming languages, algorithms, data structures, and database management.",
+            gpa: "3.69/4.00",
+            coursework: "Data Structures, Algorithms, Object-Oriented Programming, Machine Learning, Artificial Intelligence, Bioinformatics Computing, Discrete Mathematics.",
+            projectLabel: "Final Year Project:",
+            project: "AI-Based E-Commerce Platform propagated via Django and React with a machine learning regression model for real-time laptop price prediction.",
             icon: <BookOpen className="w-5 h-5 text-white" />
         }
     ];
@@ -47,12 +51,15 @@ const Education = () => {
 
                     <div className="flex flex-wrap items-center gap-2 text-xs text-gray-500 mb-4">
                         <span className="inline-flex items-center px-2.5 py-0.5 bg-gray-100 text-gray-700 rounded-full font-medium">{edu.period}</span>
-                        <span className="inline-flex items-center px-2.5 py-0.5 bg-gray-100 text-gray-700 rounded-full font-medium">GPA: {edu.gpa}</span>
+                        <span className="inline-flex items-center px-2.5 py-0.5 bg-gray-100 text-gray-700 rounded-full font-medium">CGPA: {edu.gpa}</span>
                     </div>
 
-                    <p className="text-sm text-gray-600 leading-relaxed">
-                        {edu.description}
-                    </p>
+                    <div className="text-sm text-gray-600 leading-relaxed text-justify space-y-3">
+                        <p>{edu.coursework}</p>
+                        <p>
+                            <span className="font-semibold text-gray-800">{edu.projectLabel}</span> {edu.project}
+                        </p>
+                    </div>
                 </div>
             ))}
         </div>

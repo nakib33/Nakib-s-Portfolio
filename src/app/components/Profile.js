@@ -46,7 +46,7 @@ const Profile = () => {
                             </div>
                             {/* floating badge */}
                             <div className="absolute -bottom-4 -left-4 bg-gray-700 text-white rounded-lg px-3.5 py-2.5 shadow-md">
-                                <p className="text-xl font-bold leading-none">7+</p>
+                                <p className="text-xl font-bold leading-none">6+</p>
                                 <p className="text-[9px] tracking-widest uppercase text-gray-300 mt-1">Peer-Reviewed Papers</p>
                             </div>
                         </div>
@@ -61,7 +61,7 @@ const Profile = () => {
                             </span>
                         </div>
 
-                        <p className="text-base sm:text-lg text-gray-500 mb-4">
+                        <p className="text-base sm:text-lg text-gray-500 mb-4 text-justify">
                             Building <span className="text-gray-700 font-medium">trustworthy, interpretable AI</span> for
                             healthcare, medical imaging, and intelligent systems.
                         </p>
@@ -90,6 +90,7 @@ const Profile = () => {
                             <a
                                 href="/Nakib_CV.pdf"
                                 download
+                                onClick={() => window.open("/Nakib_CV.pdf", "_blank")}
                                 className="inline-flex items-center gap-2 border border-gray-300 text-gray-700 px-5 py-2.5 rounded-lg font-medium text-sm hover:bg-gray-800 hover:text-white hover:border-gray-800 transition"
                             >
                                 <Download className="w-4 h-4" /> Download CV

@@ -120,6 +120,7 @@ const HomePage = () => {
     link.href = "/Nakib_CV.pdf";
     link.download = "Nakib_CV.pdf";
     link.click();
+    window.open("/Nakib_CV.pdf", "_blank");
   };
 
   const featuredProjects = projects.slice(0, 3);

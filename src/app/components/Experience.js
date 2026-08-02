@@ -103,7 +103,7 @@ const Experience = () => {
                                 {exp.responsibilities.map((responsibility, idx) => (
                                     <li key={idx} className="leading-relaxed flex gap-2">
                                         <span className="text-gray-300 mt-0.5">•</span>
-                                        <span>{responsibility}</span>
+                                        <span className="text-justify">{responsibility}</span>
                                     </li>
                                 ))}
                             </ul>

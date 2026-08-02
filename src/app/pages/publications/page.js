@@ -41,6 +41,25 @@ const publications = [{
 
 
 {
+    title: "Enhancing Online Recruitment Fraud Detection: A Comparative Analysis of Gradient Boosting and Transformer Architectures Under Severe Class Imbalance",
+    authors: ["Nakib Uddin Ahmed, Azizur Rahman"],
+    year: 2024,
+    venue: "International Journal of Computer Applications",
+    venueShort: "IJCA 2024",
+    category: "Machine Learning",
+    abstract:
+        "Developed an AI-based fraudulent job posting detection system using Machine Learning, Deep Learning, and Transformer models on a dataset of 17,883 job advertisements. Applied advanced text preprocessing, Word2Vec embeddings, and SMOTE to address class imbalance. Achieved 99.44% accuracy with XGBoost (F1-score: 0.99), demonstrating the effectiveness of ensemble learning and transformer-based approaches for detecting online recruitment fraud.",
+
+    pdfLink: null,
+    status: "Published",
+    pdfLink: "/papers/Enhancing Online Recruitment Fraud Detection.pdf",
+    github: "https://github.com/nakib33/Enhancing-Online-Recruitment-Fraud-Detection.git",
+    journalLink: "https://www.ijcaonline.org/archives/volume187/number91/enhancing-online-recruitment-fraud-detection-a-comparative-analysis-of-gradient-boosting-and-transformer-architectures-under-severe-class-imbalance/",
+    keywords: ["Online Recruitment Fraud", "NLP", "SMOTE", "XGBoost", "BERT", "Deep Learning"],
+},
+
+
+{
     title: "PolyDetect: A Quality-Aware Hybrid Deep Learning Framework for Robust Polyp Segmentation in Degraded Colonoscopy Images",
     authors: ["Nakib Uddin Ahmed, Azizur Rahman"],
     year: 2026,
@@ -59,38 +78,20 @@ const publications = [{
 
 
 {
-    title: "Enhancing Online Recruitment Fraud Detection: A Comparative Analysis of Gradient Boosting and Transformer Architectures Under Severe Class Imbalance",
-    authors: ["Nakib Uddin Ahmed, Azizur Rahman"],
-    year: 2024,
-    venue: "International Journal of Computer Applications",
-    venueShort: "IJCA 2024",
-    category: "Machine Learning",
+    title: "Soft Voting Ensemble Learning and SHAP-Based Interpretability for Maternal and Fetal Health Risk Stratification Across Multiple Clinical Datasets",
+    authors: ["Nakib Uddin Ahmed"],
+    year: 2026,
+    venue: "IEEE Xplore",
+    venueShort: "IEEE Xplore 2026",
+    category: "Healthcare AI",
     abstract:
-        "Developed an AI-based fraudulent job posting detection system using Machine Learning, Deep Learning, and Transformer models on a dataset of 17,883 job advertisements. Applied advanced text preprocessing, Word2Vec embeddings, and SMOTE to address class imbalance. Achieved 99.44% accuracy with XGBoost (F1-score: 0.99), demonstrating the effectiveness of ensemble learning and transformer-based approaches for detecting online recruitment fraud.",
-
-    pdfLink: null,
-    status: "Published",
-    pdfLink: "/papers/Enhancing Online Recruitment Fraud Detection.pdf",
-    github: "https://github.com/nakib33/Enhancing-Online-Recruitment-Fraud-Detection.git",
-    journalLink: "https://www.ijcaonline.org/archives/volume187/number91/enhancing-online-recruitment-fraud-detection-a-comparative-analysis-of-gradient-boosting-and-transformer-architectures-under-severe-class-imbalance/",
-    keywords: ["Online Recruitment Fraud", "NLP", "SMOTE", "XGBoost", "BERT", "Deep Learning"],
-},
-
-{
-    title: "CV-Mamba: Gated CNN Transfer Learning for Mango Leaf Disease Detection with pHash-Based Deduplication and Leakage-Free Partitioning",
-    authors: ["Nakib Uddin Ahmed, Azizur Rahman"],
-    year: 2025,
-    venue: "Frontiers",
-    venueShort: "Frontiers 2025",
-    category: "Computer Vision",
-    abstract:
-        "The problem of mango leaf disease is an urgent task in tropical areas. In this paper, we propose an end-to-end deep learning pipeline for eight-class mango leaf disease classification based on perceptual hash deduplication (pHash, τ=8) and leakage-free stratified partitioning for the first time. Experiments show that 739 similar images (18.48%) were removed from the initial 4,000 images by deduplication, leaving 3,261 unique images. The MambaOut-Small model demonstrated outstanding performance with a test accuracy of 99.59%, and a macro F1-score of 0.9962, outperforming the MambaOut-Base model (99.39%). For edge deployment, the MambaOut-Kobe model, containing 9.1M parameters, achieved a good balance between performance (99.18%) and model size, being more than 5.3x smaller than the largest counterpart.",
+        "Developed a soft-voting ensemble framework combining XGBoost and Random Forest for maternal and fetal health risk stratification across multiple clinical datasets. Applied SHAP-based interpretability with 5-fold stratified cross-validation to identify key clinical drivers of high-risk pregnancy, supporting explainable clinical decision-making.",
 
     pdfLink: null,
     status: "Accepted",
     pdfLink: "/papers/CV_Mamba.pdf",
-    github: "https://github.com/nakib33/CV-Mamba-Gated-CNN-Transfer-Learning.git",
-    keywords: [ "Mango Leaf Disease", "MambaOut", "Gated CNN", "Transfer Learning", "pHash Deduplication", "Leakage-Free Partitioning", "Plant Disease Detection", "Computer Vision", "Agricultural AI" ],
+    github: "https://github.com/nakib33/Maternal-and-Fetal-Health-Risk.git",
+    keywords: [ "Maternal Health Risk", "Fetal Health Classification", "Soft Voting Ensemble", "SHAP-Based Interpretability", "Ensemble Learning", "XGBoost", "Random Forest", "Explainable Artificial Intelligence (XAI)", "Cardiotocography (CTG)", "5-Fold Stratified Cross-Validation", "High-Risk Pregnancy" ],
 },
 
 
@@ -111,24 +112,24 @@ const publications = [{
     keywords:  [ "Transfer Learning", "Brain Tumor Classification", "MRI", "EfficientNet", "Low-Data Regime", "Statistical Power", "Explainable AI", "Grad-CAM++" ],
 },
 
-
+/* Commented out — CV-Mamba
 {
-    title: "Soft Voting Ensemble Learning and SHAP-Based Interpretability for Maternal and Fetal Health Risk Stratification Across Multiple Clinical Datasets",
-    authors: ["Nakib Uddin Ahmed"],
-    year: 2026,
-    venue: "IEEE Xplore",
-    venueShort: "IEEE Xplore 2026",
-    category: "Healthcare AI",
+    title: "CV-Mamba: Gated CNN Transfer Learning for Mango Leaf Disease Detection with pHash-Based Deduplication and Leakage-Free Partitioning",
+    authors: ["Nakib Uddin Ahmed, Azizur Rahman"],
+    year: 2025,
+    venue: "Frontiers",
+    venueShort: "Frontiers 2025",
+    category: "Computer Vision",
     abstract:
         "The problem of mango leaf disease is an urgent task in tropical areas. In this paper, we propose an end-to-end deep learning pipeline for eight-class mango leaf disease classification based on perceptual hash deduplication (pHash, τ=8) and leakage-free stratified partitioning for the first time. Experiments show that 739 similar images (18.48%) were removed from the initial 4,000 images by deduplication, leaving 3,261 unique images. The MambaOut-Small model demonstrated outstanding performance with a test accuracy of 99.59%, and a macro F1-score of 0.9962, outperforming the MambaOut-Base model (99.39%). For edge deployment, the MambaOut-Kobe model, containing 9.1M parameters, achieved a good balance between performance (99.18%) and model size, being more than 5.3x smaller than the largest counterpart.",
 
     pdfLink: null,
     status: "Accepted",
     pdfLink: "/papers/CV_Mamba.pdf",
-    github: "https://github.com/nakib33/Maternal-and-Fetal-Health-Risk.git",
-    keywords: [ "Maternal Health Risk", "Fetal Health Classification", "Soft Voting Ensemble", "SHAP-Based Interpretability", "Ensemble Learning", "XGBoost", "Random Forest", "Explainable Artificial Intelligence (XAI)", "Cardiotocography (CTG)", "5-Fold Stratified Cross-Validation", "Friedman Test", "Wilcoxon Signed-Rank Test", "High-Risk Pregnancy", "Blood Glucose", "Systolic Blood Pressure", "Abnormal Short-Term Variability" ],
+    github: "https://github.com/nakib33/CV-Mamba-Gated-CNN-Transfer-Learning.git",
+    keywords: [ "Mango Leaf Disease", "MambaOut", "Gated CNN", "Transfer Learning", "pHash Deduplication", "Leakage-Free Partitioning", "Plant Disease Detection", "Computer Vision", "Agricultural AI" ],
 },
-
+*/
 
 ];
 
@@ -197,6 +198,9 @@ export default function PublicationsPage() {
                                 <div className="flex-1">
                                     {/* Badges */}
                                     <div className="flex flex-wrap gap-2 mb-3">
+                                        <span className="text-xs px-2 py-0.5 bg-gray-800 text-white font-bold rounded">
+                                            {String(i + 1).padStart(2, '0')}
+                                        </span>
                                         <span className="text-xs px-2 py-0.5 bg-gray-100 text-gray-700 border border-gray-200">
                                             {pub.category}
                                         </span>
@@ -227,7 +231,7 @@ export default function PublicationsPage() {
                                     </div>
 
                                     {/* Abstract */}
-                                    <p className="text-gray-600 text-sm leading-relaxed">
+                                    <p className="text-gray-600 text-sm leading-relaxed text-justify">
                                         {pub.abstract}
                                     </p>
 

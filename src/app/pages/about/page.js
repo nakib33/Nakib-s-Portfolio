@@ -91,7 +91,7 @@ const quickFacts = [
   { icon: <Mail className="w-4 h-4" />, label: "Email", value: "nakibuddin33@gmail.com" },
   { icon: <Phone className="w-4 h-4" />, label: "Phone", value: "+880 1646-819354" },
   { icon: <GraduationCap className="w-4 h-4" />, label: "Degree", value: "M.Sc. Information Technology (SUST)" },
-  { icon: <Award className="w-4 h-4" />, label: "Research", value: "7+ peer-reviewed publications" },
+  { icon: <Award className="w-4 h-4" />, label: "Research", value: "6+ peer-reviewed publications" },
 ];
 
 const references = [
@@ -170,7 +170,7 @@ export default function AboutPage() {
           </aside>
 
           {/* Narrative */}
-          <div className="space-y-5 text-gray-700 leading-relaxed text-base text-left sm:text-justify">
+          <div className="space-y-5 text-gray-700 leading-relaxed text-base text-justify">
             <p>
               AI Researcher and Machine Learning Engineer with 3+ years of experience developing intelligent, data-driven systems across healthcare, bioinformatics, geospatial analytics, urban computing, and predictive modeling. Earned a B.Sc. in Computer Science &amp; Engineering (CGPA: 3.69/4.00) from Metropolitan University, Bangladesh, and an M.Sc. in Information Technology (CGPA: 3.88/4.00) from Shahjalal University of Science and Technology (SUST), Bangladesh. Passionate about advancing trustworthy, scalable, and interpretable AI that bridges fundamental research with real-world deployment.
             </p>
@@ -178,7 +178,7 @@ export default function AboutPage() {
               Author of multiple peer-reviewed research publications in internationally recognized journals, with contributions spanning Medical Imaging, Explainable Artificial Intelligence (XAI), Bioinformatics, Computer Vision, Natural Language Processing (NLP), Healthcare AI, Recruitment Fraud Detection, Housing Affordability Forecasting, Geospatial AI, Urban Analytics, and Ensemble Machine Learning. My research focuses on designing robust AI models that improve decision-making, enhance predictive performance, and deliver measurable societal impact through responsible and explainable artificial intelligence.
             </p>
             <div className="rounded-xl bg-gray-50 border border-gray-100 p-6">
-              <p className="text-gray-700 leading-relaxed text-left sm:text-justify">
+              <p className="text-gray-700 leading-relaxed text-justify">
                 Proficient in Python, PyTorch, scikit-learn, SQL, FastAPI, React, Next.js, Docker, AWS, Power BI, Git, and Linux, with expertise in Deep Learning, Computer Vision, Vision Transformers (ViTs), Large Language Models (LLMs), Multimodal AI, Explainable AI (XAI), Predictive Analytics, Time Series Forecasting, MLOps, and AI Systems Engineering. Experienced in building end-to-end AI solutions—from data acquisition and model development to API deployment and production-ready machine learning systems. Dedicated to advancing next-generation AI through interdisciplinary research and engineering, with the goal of developing impactful technologies for healthcare, smart cities, and data-driven decision support.
               </p>
             </div>
@@ -201,7 +201,7 @@ export default function AboutPage() {
                 </div>
                 <div>
                   <h3 className="text-base font-semibold text-gray-900 mb-1.5">{r.title}</h3>
-                  <p className="text-sm text-gray-600 leading-relaxed">{r.desc}</p>
+                  <p className="text-sm text-gray-600 leading-relaxed sm:text-justify">{r.desc}</p>
                 </div>
               </div>
             ))}
@@ -255,7 +255,7 @@ export default function AboutPage() {
                 <span className="h-px w-8 bg-gray-300"></span>
                 <span className="text-xs font-semibold tracking-[0.2em] uppercase text-gray-500">Research</span>
               </div>
-              <h2 className="text-3xl font-bold text-gray-900">7 Peer-Reviewed Publications</h2>
+              <h2 className="text-3xl font-bold text-gray-900">6 Peer-Reviewed Publications</h2>
               <p className="text-sm text-gray-500 mt-2">Springer Nature · Elsevier · Frontiers · IJCA</p>
             </div>
             <Link

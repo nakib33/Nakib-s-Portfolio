@@ -1,0 +1,231 @@
+\documentclass[10.5pt,letterpaper]{article}
+
+\usepackage[margin=0.6in,top=0.45in,bottom=0.45in]{geometry}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{tabularx}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[C]{\small\thepage}
+\fancyfoot[R]{\small\textit{Last updated: July 2026}}
+
+\setlength{\parindent}{0pt}
+
+\newcommand{\sectiontitle}[1]{\vspace{7pt}\noindent\underline{\textbf{#1}}\vspace{5pt}\par}
+
+\setlist[itemize]{leftmargin=14pt, itemsep=1pt, topsep=2pt, parsep=0pt}
+
+\newcommand{\jobheader}[3]{\textbf{#1} \; | \; #2 \hfill \textit{#3}\par\vspace{1pt}}
+
+\newcommand{\pubentry}[4]{%
+  \noindent\textbf{#1}\\[1pt]
+  \noindent #2\\[1pt]
+  \noindent\textit{#3} \hfill \textbf{[#4]}\\[4pt]
+}
+
+\hypersetup{colorlinks=true, urlcolor=blue, linkcolor=blue}
+
+\begin{document}
+
+\begin{center}
+  {\large \bfseries AZIZUR RAHMAN} \\[2pt]
+  New York, USA \; | \; +1 (347) 669-6071 \; | \; azizurusa22@gmail.com \\[1pt]
+  \href{https://github.com/ayanchyaziz123}{GitHub} \; | \; \href{http://azizurrahman.netlify.app/}{Portfolio} \; | \; \href{https://scholar.google.com/citations?hl=en&user=ZybW6NMAAAAJ}{Google Scholar}
+\end{center}
+
+\sectiontitle{RESEARCH INTERESTS}
+Deep Learning \& Convolutional Neural Networks $\cdot$ Computer Vision \& Medical Image Analysis $\cdot$ CNN--Transformer Hybrid Architectures $\cdot$ Transfer Learning \& Efficient Deep Learning $\cdot$ Explainable \& Trustworthy AI $\cdot$ Multimodal Learning $\cdot$ Uncertainty Quantification \& Robust Visual Learning
+
+\sectiontitle{RESEARCH PROFILE}
+Computer Science researcher (M.S.\ AI, GPA 3.97/4.00, Summa Cum Laude) with \textbf{2 published, 1 accepted, and 2 under-review papers} in Springer Nature, Elsevier, and Frontiers. Specializing in CNN--Transformer hybrid architectures, medical image analysis, and explainable AI, with applications spanning gastrointestinal endoscopy risk stratification, Parkinson's disease detection, and urban affordability forecasting.
+
+\sectiontitle{EDUCATION}
+
+\noindent
+\begin{tabularx}{\linewidth}{@{}X r@{}}
+  \textbf{Master of Science in Computer Science --- Artificial Intelligence} & \textit{Completed April 2026} \\
+  Indiana Wesleyan University, United States & \textbf{GPA: 3.97/4.00}
+\end{tabularx}
+
+\vspace{3pt}
+\textit{Relevant coursework:} Machine Learning Fundamentals, Model Development, Python Algorithms, Database Systems, Object-Oriented Programming, Cloud Computing.
+
+\vspace{3pt}
+\textit{Capstone Project:} AI Integration Capstone --- designed and evaluated a deep learning pipeline for medical image classification, applying transfer learning, data augmentation, and model interpretability techniques for clinical decision support.
+
+\vspace{8pt}
+
+\noindent
+\begin{tabularx}{\linewidth}{@{}X r@{}}
+  \textbf{Bachelor of Science in Computer Science and Engineering} & \textit{Completed February 2022} \\
+  Metropolitan University, Bangladesh & \textbf{CGPA: 3.48/4.00}
+\end{tabularx}
+
+\vspace{3pt}
+\textit{Relevant coursework:} Data Structures, Algorithms, Object-Oriented Programming, Machine Learning, Artificial Intelligence, Bioinformatics Computing, Discrete Mathematics.
+
+\vspace{3pt}
+\textit{Final Year Project:} \href{https://github.com/ayanchyaziz123/final-year-project-main}{Full-Stack E-Commerce Platform} --- built a production-grade online store using Django and React with JWT authentication, product comparison, shopping cart, and an integrated ML regression model for real-time laptop price prediction.
+
+\sectiontitle{HONOURS \& AWARDS}
+\begin{itemize}
+  \item \textbf{Summa Cum Laude} --- Indiana Wesleyan University, April 2026 (GPA: 3.97/4.00)
+  \item \textbf{First Class} --- Bachelor of Science in Computer Science and Engineering, Metropolitan University, Bangladesh, February 2022 (CGPA: 3.48/4.00)
+  \item \textbf{Springer Nature Publication} --- Paper published in \textit{Applied Spatial Analysis and Policy} (Springer Nature, 2026); competitive peer-reviewed journal in spatial data science and urban analytics.
+\end{itemize}
+
+\sectiontitle{PUBLICATIONS}
+
+% 1. Housing Affordability — Published, 1st author
+\pubentry
+  {AI-Driven Housing Affordability Forecasting in New York City: An NTA-Level Panel Analysis Using Ensemble Machine Learning}
+  {\textbf{Azizur Rahman}, Nakib Uddin Ahmed, Mehjabin Ferdous, Kadirur Rahman Chowdhury}
+  {\href{https://link.springer.com/article/10.1007/s12061-026-09955-4}{Applied Spatial Analysis and Policy, Springer Nature}, 2026}
+  {Published}
+
+\begin{itemize}
+  \item Built an explainable ensemble ML framework from \textbf{2,512 observations} across 239 NYC Neighbourhood Tabulation Areas using 46 features (ACS, eviction records, Zillow ZORI).
+  \item LightGBM achieved \textbf{$R^2$ = 0.926} and \textbf{RMSE = 0.035} under strict temporal cross-validation; applied SHAP for policy-level feature attribution.
+\end{itemize}
+
+\vspace{6pt}
+
+% 2. Beyond Binary — Under Review, 1st author
+\pubentry
+  {Beyond Binary: Four-Class Risk Stratification from Gastrointestinal Endoscopy Using Asymmetric-Cost Lightweight CNN--Transformer Learning}
+  {\textbf{Azizur Rahman}, Nakib Uddin Ahmed, Kadirur Rahman Chowdhury, Mehjabin Ferdous, Md.\ Shahadat Hossain, Md.\ Amir Hossain}
+  {\href{https://www.researchsquare.com/article/rs-10475241/v1}{Evolutionary Intelligence, Springer}, 2026}
+  {Under Review}
+
+\begin{itemize}
+  \item Developed a four-class gastrointestinal lesion risk stratification framework using lightweight CNN and Transformer architectures (DenseNet-121, EfficientNet-B0, DeiT-Tiny).
+  \item Mapped 21 of 23 HyperKvasir finding classes into four clinically actionable risk tiers; achieved \textbf{macro F1 = 0.84} on HyperKvasir and \textbf{0.78 zero-shot} on Kvasir-v2.
+  \item Proposed an \textbf{Asymmetric Endoscopy Loss (AEL)} with a 5$\times$ high-risk penalty; applied MC Dropout ($T$ = 30, $\tau$ = 0.75) for uncertainty-aware clinical referral decisions.
+  \item Automated triage of \textbf{44.9\% low-confidence cases} with \textbf{zero missed high-risk lesions}.
+\end{itemize}
+
+\vspace{6pt}
+
+% 3. PolyDetect — Under Review, 1st author
+\pubentry
+  {PolyDetect: A Quality-Aware Hybrid Deep Learning Framework for Robust Polyp Segmentation in Degraded Colonoscopy Images}
+  {\textbf{Azizur Rahman}, Nakib Uddin Ahmed, Kadirur Rahman Chowdhury, Mehjabin Ferdous}
+  {International Journal of Medical Informatics (IJMEDI-D-26-04317), Elsevier, 2026}
+  {Under Review}
+
+\begin{itemize}
+  \item Proposed PolyDetect combining degradation simulation, no-reference IQA (BRISQUE + CNN), quality-gated enhancement (Retinex, CLAHE, DnCNN), PVT-v2 encoder with boundary-refinement head, and quality-weighted composite loss.
+  \item Achieved \textbf{Dice = 0.8066} and \textbf{IoU = 0.7262} zero-shot on CVC-ColonDB and ETIS, outperforming all CNN-based baselines; \textbf{53.62 FPS} on Tesla T4 (27.35M parameters).
+\end{itemize}
+
+\vspace{6pt}
+
+% 4. Recruitment Fraud — Published, 1st author
+\pubentry
+  {Enhancing Online Recruitment Fraud Detection: A Comparative Analysis of Gradient Boosting and Transformer Architectures Under Severe Class Imbalance}
+  {\textbf{Azizur Rahman}, Nakib Uddin Ahmed}
+  {\href{https://www.ijcaonline.org/archives/volume187/number91/enhancing-online-recruitment-fraud-detection-a-comparative-analysis-of-gradient-boosting-and-transformer-architectures-under-severe-class-imbalance/}{International Journal of Computer Applications}, 2024}
+  {Published}
+
+\begin{itemize}
+  \item Compared BERT, RoBERTa, SVM, Random Forest, and XGBoost on 17,883 records with SMOTE; XGBoost reached \textbf{99.44\% accuracy} and \textbf{F1 = 0.99}.
+\end{itemize}
+
+\vspace{6pt}
+
+% 5. MultiParkNet — Accepted, 2nd author
+\pubentry
+  {MultiParkNet: A Ten-Stream Multimodal Deep Learning Framework with Cross-Modal Transformer Fusion and Dynamic Inter-Modal Gating for Early Detection of Parkinson's Disease}
+  {Nur Mohammod Oli, \textbf{Azizur Rahman}, A K M Rashid Been Aziz, \textit{et al.}}
+  {\href{https://www.frontiersin.org/journals/medicine}{Frontiers in Medicine}, Precision Medicine, 2026}
+  {Accepted}
+
+\begin{itemize}
+  \item Co-developed a ten-stream multimodal framework integrating audio, motor drawing, structural MRI, ECG, and DaTSCAN modalities with cross-modal Transformer fusion.
+  \item Achieved \textbf{AUC-ROC = 0.9924}, \textbf{accuracy = 96.0\%}, and \textbf{F1 = 0.9254} on the Parkinson Multi-Modal Dataset 2.0 (831 subjects).
+\end{itemize}
+
+\sectiontitle{PROFESSIONAL EXPERIENCE}
+
+\jobheader{AI \& Software Engineering Specialist}{Aptech}{Apr 2026 -- Present}
+\begin{itemize}
+  \item Deliver technical modules covering \textbf{full-stack architecture}, \textbf{API integration}, and \textbf{machine learning model deployment}.
+  \item Guide developers in implementing industry-standard design patterns, modular architecture, and efficient database indexing.
+  \item Conduct \textbf{code reviews} and evaluate system performance for student and client software projects.
+\end{itemize}
+
+\jobheader{Coding Expert (Part-Time)}{Indiana Wesleyan University, Merrillville, IN}{Aug 2025 -- Feb 2026}
+\begin{itemize}
+  \item \textbf{Mentored students} in core programming concepts (Java, C, C++) and Object-Oriented Programming principles.
+  \item Provided hands-on assistance with code debugging, runtime complexity reduction, and technical interview preparation.
+\end{itemize}
+
+\jobheader{Software Engineer Intern}{Next Generation Innovation L.L.C., New York, USA}{Apr 2025 -- Jul 2025}
+\begin{itemize}
+  \item Led \textbf{architectural design and deployment} of scalable full-stack ecosystems using Django and FastAPI for service-oriented backends.
+  \item Integrated \textbf{predictive analytics and ML modules} into enterprise software to enhance data-driven decision-making.
+  \item Orchestrated cross-platform mobile strategies with React Native; optimized frontend performance via Next.js server-side rendering.
+  \item Designed and managed databases across PostgreSQL, MySQL, MongoDB, and Firebase.
+\end{itemize}
+
+\jobheader{Software Engineer / SQA Engineer}{Inverse AI, Sylhet, Bangladesh}{Nov 2021 -- Dec 2022}
+\begin{itemize}
+  \item Directed \textbf{QA cycles and automated testing frameworks} for system reliability and performance under load.
+  \item Refined \textbf{CI/CD pipelines} and improved codebase maintainability through rigorous code reviews and defect analysis.
+\end{itemize}
+
+\sectiontitle{SELECTED TECHNICAL PROJECTS}
+
+\textbf{Breast Cancer Classifier} \; | \; \href{https://github.com/ayanchyaziz123/breast-cancer-classifier}{GitHub} \; | \; \textit{Python, Scikit-learn, XGBoost, FastAPI}
+\begin{itemize}
+  \item Trained four classifiers (Logistic Regression, SVM, Random Forest, XGBoost) on the Wisconsin Breast Cancer Diagnostic dataset (569 samples, 30 FNA features); tuned decision threshold to achieve \textbf{$\geq$98\% recall} on malignant cases, minimizing false negatives in a screening context.
+\end{itemize}
+
+\textbf{FaceAttend --- Face Recognition Attendance System} \; | \; \href{https://github.com/ayanchyaziz123/face-recognition-api}{GitHub} \; | \; \textit{Python, PyTorch, ResNet-18, OpenCV, FastAPI}
+\begin{itemize}
+  \item Multi-tenant biometric system with fine-tuned ResNet-18; novel \textbf{two-layer liveness pipeline} (texture analysis + blink detection) to mitigate photo/video spoofing.
+\end{itemize}
+
+\textbf{DQN LunarLander --- Reinforcement Learning Agent} \; | \; \href{https://github.com/ayanchyaziz123/dqn-lunarlander}{GitHub} \; | \; \textit{Python, PyTorch, Gymnasium, FastAPI}
+\begin{itemize}
+  \item Implemented \textbf{Double DQN} to mitigate overestimation bias in the LunarLander-v3 environment; built a web UI for frame-by-frame agent visualization and reward curves.
+\end{itemize}
+
+\textbf{Real-Time Emotion Detector} \; | \; \href{https://github.com/ayanchyaziz123/Real-time-facial-expression-recognition}{GitHub} \; | \; \textit{Python, PyTorch, ResNet-18, OpenCV, FER2013}
+\begin{itemize}
+  \item Fine-tuned ResNet-18 for \textbf{seven-class facial emotion recognition} from live webcam frames with real-time inference.
+\end{itemize}
+
+\sectiontitle{TECHNICAL SKILLS}
+\begin{itemize}
+  \item \textbf{Programming:} Python, JavaScript, TypeScript, Java, C++, C
+  \item \textbf{Machine Learning:} Scikit-learn, XGBoost, LightGBM, TensorFlow, Pandas, NumPy, SHAP
+  \item \textbf{Deep Learning:} CNNs, Vision Transformers, Transformer Architectures, Transfer Learning, Multimodal Learning, MambaOut
+  \item \textbf{Research Methods:} Computer Vision, NLP, Explainable AI, Imbalanced Learning, Feature Engineering, Model Evaluation, Cross-Validation, Temporal Validation, Spatial Analysis, Forecasting
+  \item \textbf{Medical AI:} Medical Imaging, Clinical Decision Support, Risk Stratification, Uncertainty Quantification
+  \item \textbf{Web \& Mobile:} Django, FastAPI, React.js, Next.js, React Native, Node.js, Express.js
+  \item \textbf{Databases:} PostgreSQL, MySQL, MongoDB, Firebase
+  \item \textbf{Tools:} Git, GitHub, Docker, Jupyter Notebook, REST APIs
+\end{itemize}
+
+\sectiontitle{LANGUAGES}
+\begin{itemize}
+  \item \textbf{English:} Fluent
+  \item \textbf{Bengali:} Native
+  \item \textbf{Hindi:} Conversational
+\end{itemize}
+
+\sectiontitle{REFERENCES}
+
+\noindent
+\begin{tabularx}{\linewidth}{@{} X X @{}}
+  \textbf{Dr. Santanu Das} & \textbf{Lawrence Iweriebor} \\
+  \textit{Supervisor} & \textit{Professor, Computer Science} \\
+  \textit{Next Generation Innovation L.L.C., New York} & \textit{Indiana Wesleyan University, United States} \\
+  \href{mailto:santanu44@aol.com}{santanu44@aol.com} & \href{mailto:lawrence.iweriebor@indwes.edu}{lawrence.iweriebor@indwes.edu} \\
+\end{tabularx}
+
+\end{document}
