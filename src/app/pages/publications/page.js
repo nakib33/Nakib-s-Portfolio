@@ -89,7 +89,7 @@ const publications = [{
 
     pdfLink: null,
     status: "Accepted",
-    pdfLink: "/papers/CV_Mamba.pdf",
+    pdfLink: "/papers/IEEE_Conference.pdf",
     github: "https://github.com/nakib33/Maternal-and-Fetal-Health-Risk.git",
     keywords: [ "Maternal Health Risk", "Fetal Health Classification", "Soft Voting Ensemble", "SHAP-Based Interpretability", "Ensemble Learning", "XGBoost", "Random Forest", "Explainable Artificial Intelligence (XAI)", "Cardiotocography (CTG)", "5-Fold Stratified Cross-Validation", "High-Risk Pregnancy" ],
 },

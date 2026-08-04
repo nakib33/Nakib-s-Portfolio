@@ -20,7 +20,7 @@ const ProjectPost = ({ params }) => {
     notFound();
   }
 
-  const images = [project.image, project.image2, project.image3].filter(Boolean);
+  const images = [project.image, project.image2, project.image3, project.image4].filter(Boolean);
 
   const handleNext = () => setCurrentImage((prev) => (prev + 1) % images.length);
   const handlePrev = () => setCurrentImage((prev) => (prev - 1 + images.length) % images.length);

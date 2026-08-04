@@ -867,6 +867,63 @@ export const projects = [
   technologies: ['MERN', 'MongoDB', 'Express.js', 'React', 'Node.js'],
   link: '/pages/artifacts/hey-girls-ecommerce',
   github: 'https://github.com/nakib33/Hey-Girls-Ecommerce-website-for-women'
+},
+{
+  slug: 'movie-recommendation-system',
+  title: 'Movie Recommendation System — KNN on MovieLens 20M',
+  date: '2026',
+  content: `
+    <p>An AI-powered personalized movie recommendation system built on the MovieLens 20M dataset (27K movies, 138K users, 19 genres) using K-Nearest Neighbors with multi-modal feature fusion. Served through a FastAPI backend with a glassmorphism dark-theme frontend, real-time search, analytics dashboard, and batch recommendation processing.</p>
+
+    <h3>Artifact Description</h3>
+    <h4>Objective</h4>
+    <p>To build a production-ready content-based movie recommendation engine using K-Nearest Neighbors, combining genre multi-hot encoding, title TF-IDF vectorization, and rating statistics into weighted feature vectors with cosine similarity. Includes model training, hyperparameter tuning, REST API deployment, and an interactive web UI with analytics.</p>
+
+    <h4>Process</h4>
+    <p>The project was developed in Python using scikit-learn and FastAPI. The MovieLens 20M dataset was downloaded and preprocessed into parquet files. Feature engineering combines 20 genre features, 500 title TF-IDF features, and 4 rating statistics, weighted for optimal similarity. The KNN model (optimal K=21, cosine similarity) achieves 100% recommendation coverage with an average similarity score of 94.76%. The FastAPI app exposes 9 REST endpoints, and the frontend features real-time debounced search, genre filtering, analytics charts, and CSV batch processing.</p>
+
+    <h4>Features</h4>
+    <ul>
+      <li><strong>Intelligent Recommendations:</strong> content-based KNN filtering with weighted feature fusion and similarity scores</li>
+      <li><strong>Smart Search:</strong> fuzzy title search, genre exploration, autocomplete dropdown</li>
+      <li><strong>Analytics Dashboard:</strong> genre popularity, rating distributions, top-rated leaderboard, year-wise trends</li>
+      <li><strong>Batch Processing:</strong> upload CSV of movie IDs, generate bulk recommendations, download results</li>
+      <li><strong>Model Evaluation:</strong> Precision@K, Recall@K, coverage, hyperparameter tuning visualization</li>
+    </ul>
+
+    <h4>ML Pipeline</h4>
+    <ul>
+      <li>Genre Multi-Hot Encoding (20 features, weight 1.0)</li>
+      <li>Title TF-IDF Vectorization (500 features, weight 0.3)</li>
+      <li>Rating Statistics (4 features, weight 0.5)</li>
+      <li>K-Nearest Neighbors (Brute Force), Cosine Similarity, K=21</li>
+      <li>100% coverage across 27,278 movies; average similarity 94.76%</li>
+    </ul>
+
+    <h4>Tools and Technologies Used</h4>
+    <ul>
+      <li>Backend: Python, FastAPI, Uvicorn</li>
+      <li>ML: scikit-learn (NearestNeighbors), pandas, NumPy</li>
+      <li>Frontend: HTML5, CSS3, JavaScript (Vanilla), Chart.js</li>
+      <li>Data: MovieLens 20M Dataset (GroupLens Research)</li>
+      <li>Version control: GitHub</li>
+    </ul>
+
+    <h4>Reflection</h4>
+    <h5>Significance</h5>
+    <p>This project demonstrates the full ML pipeline for recommendation systems — from data collection and feature engineering to model training, hyperparameter tuning, REST API deployment, and an interactive frontend — showcasing the pattern used by Netflix, Amazon, and Spotify.</p>
+
+    <h5>Lessons Learned</h5>
+    <p>Building this end-to-end project reinforced feature engineering for similarity-based recommendations, the trade-offs of KNN as a lazy learner, and how to deploy an ML model behind a production REST API with a polished UI.</p>
+  `,
+  image: '/image/movie1.png',
+  image2: '/image/movie2.png',
+  image3: '/image/movie3.png',
+  image4: '/image/movie4.png',
+  description: 'A content-based KNN movie recommendation engine on the MovieLens 20M dataset — genre + TF-IDF + rating feature fusion, FastAPI backend, glassmorphism dark UI, real-time search, analytics dashboard, and batch recommendations.',
+  technologies: ['KNN', 'scikit-learn', 'FastAPI', 'Pandas', 'NumPy', 'Chart.js'],
+  link: '/pages/artifacts/movie-recommendation-system',
+  github: 'https://github.com/nakib33/Movie-Recommendation-Using-KNN'
 }];
 
 export default projects;
