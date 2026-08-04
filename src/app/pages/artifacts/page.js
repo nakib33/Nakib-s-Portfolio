@@ -1,6 +1,13 @@
 import { projects } from "@/data/projects";
 import Project from "@/app/components/Artifact";
 
+// Show these projects first
+const priorityOrder = ['emotionvision-ai', 'medicalvision-ai', 'stock-trend-prediction-news-analysis', 'movie-recommendation-system'];
+const sortedProjects = [
+  ...priorityOrder.map((slug) => projects.find((p) => p.slug === slug)).filter(Boolean),
+  ...projects.filter((p) => !priorityOrder.includes(p.slug)),
+];
+
 const ProjectsPage = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-transparent via-indigo-50/20 to-transparent">
@@ -22,7 +29,7 @@ const ProjectsPage = () => {
 
           {/* Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 lg:gap-7">
-            {projects.map((project, index) => (
+            {sortedProjects.map((project, index) => (
               <Project key={index} project={project} />
             ))}
           </div>

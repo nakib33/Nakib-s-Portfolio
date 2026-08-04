@@ -924,6 +924,71 @@ export const projects = [
   technologies: ['KNN', 'scikit-learn', 'FastAPI', 'Pandas', 'NumPy', 'Chart.js'],
   link: '/pages/artifacts/movie-recommendation-system',
   github: 'https://github.com/nakib33/Movie-Recommendation-Using-KNN'
+},
+{
+  slug: 'emotionvision-ai',
+  title: 'EmotionVision AI — Real-time Facial Emotion Recognition',
+  date: '2026',
+  content: `
+    <p>A full-stack facial emotion recognition system using a custom CNN (1.2M params, PyTorch) over the FER2013 dataset classifying 7 emotions. Served through a FastAPI backend with a dark-theme frontend supporting webcam live inference, image upload, confidence scores, and Grad-CAM heatmap visualization.</p>
+
+    <h3>Artifact Description</h3>
+    <h4>Objective</h4>
+    <p>To build a real-time facial emotion recognition pipeline using a custom CNN over the FER2013 dataset, capable of classifying 7 emotions (Happy, Sad, Angry, Fear, Surprise, Disgust, Neutral) from grayscale 48×48 face crops. Includes Grad-CAM visualization to highlight which facial regions drive each prediction, served through a FastAPI backend with an interactive web UI.</p>
+
+    <h4>Process</h4>
+    <p>The project was developed in Python using PyTorch and FastAPI. A custom CNN with 3 convolutional blocks (32→64→128 filters), BatchNorm, MaxPool, and dropout classification head achieves ~65–70% accuracy on FER2013. Face detection uses OpenCV Haar Cascade. Grad-CAM is implemented manually by hooking the last convolutional layer to compute gradient-weighted activation heatmaps. Class imbalance (Disgust ~400 samples vs Happy ~7K) is handled via inverse-frequency class weights and weighted CrossEntropyLoss. The FastAPI backend exposes endpoints for prediction and Grad-CAM, and the frontend provides webcam capture, image upload, live probability bars, and heatmap overlays.</p>
+
+    <h4>CNN Architecture</h4>
+    <ul>
+      <li>Conv2D(1→32, 3×3) → BatchNorm → ReLU → MaxPool(2)</li>
+      <li>Conv2D(32→64, 3×3) → BatchNorm → ReLU → MaxPool(2)</li>
+      <li>Conv2D(64→128, 3×3) → BatchNorm → ReLU → MaxPool(2)</li>
+      <li>Flatten → Linear(4608→256) → ReLU → Dropout(0.4) → Linear(256→7)</li>
+      <li>~1.2M parameters | Input: 1×48×48 grayscale | Output: 7 emotion logits</li>
+    </ul>
+
+    <h4>Features</h4>
+    <ul>
+      <li><strong>Face Detection:</strong> OpenCV Haar Cascade for locating faces in images and video</li>
+      <li><strong>Emotion Classification:</strong> 7 classes — Happy, Sad, Angry, Fear, Surprise, Disgust, Neutral</li>
+      <li><strong>Real-time Webcam:</strong> Live inference with bounding box and emotion label overlay</li>
+      <li><strong>Confidence Scores:</strong> Probability bars for each emotion class</li>
+      <li><strong>Grad-CAM Visualization:</strong> Heatmap highlighting eyes, mouth, and eyebrows</li>
+      <li><strong>Image Upload:</strong> Drag-and-drop or file browse for static image analysis</li>
+    </ul>
+
+    <h4>Grad-CAM Implementation</h4>
+    <ul>
+      <li>Hooks the last convolutional layer (model.features[-4])</li>
+      <li>Records forward activations and backward gradients</li>
+      <li>Computes importance weights via global-average-pooling of gradients</li>
+      <li>Produces heatmap overlaid on the input face (focuses on eyes, mouth, eyebrows)</li>
+    </ul>
+
+    <h4>Tools and Technologies Used</h4>
+    <ul>
+      <li>ML Framework: PyTorch (~1.2M parameter custom CNN)</li>
+      <li>Face Detection: OpenCV Haar Cascade</li>
+      <li>Backend: FastAPI + Uvicorn</li>
+      <li>Frontend: HTML5, CSS3, Vanilla JavaScript</li>
+      <li>Visualization: Grad-CAM (manual implementation)</li>
+      <li>Version control: GitHub</li>
+    </ul>
+
+    <h4>Reflection</h4>
+    <h5>Significance</h5>
+    <p>This project demonstrates end-to-end deep learning deployment — from model architecture design and class imbalance handling to Grad-CAM explainability, a production REST API, and an interactive web UI for real-time inference.</p>
+
+    <h5>Lessons Learned</h5>
+    <p>Building this system reinforced CNN design for small-image classification, the impact of class imbalance and data augmentation on model performance, and how to implement Grad-CAM from scratch for model interpretability without external dependencies.</p>
+  `,
+  image: '/image/face1.png',
+  image2: '/image/face2.png',
+  description: 'Real-time facial emotion recognition with a custom PyTorch CNN (7 emotions) over FER2013 — live webcam inference, image upload, confidence scores, and Grad-CAM heatmap visualization via FastAPI and HTML/CSS/JS.',
+  technologies: ['PyTorch', 'FastAPI', 'OpenCV', 'CNN', 'Grad-CAM', 'FER2013'],
+  link: '/pages/artifacts/emotionvision-ai',
+  github: 'https://github.com/nakib33/EmotionVision-AI.git'
 }];
 
 export default projects;

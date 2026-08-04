@@ -13,9 +13,9 @@
 
 \setlength{\parindent}{0pt}
 
-\newcommand{\sectiontitle}[1]{\vspace{4pt}\noindent\underline{\textbf{#1}}\vspace{3pt}\par}
+\newcommand{\sectiontitle}[1]{\vspace{3pt}\noindent\underline{\textbf{#1}}\vspace{2pt}\par}
 
-\setlist[itemize]{leftmargin=14pt, itemsep=1pt, topsep=1pt, parsep=0pt}
+\setlist[itemize]{leftmargin=14pt, itemsep=0.5pt, topsep=1pt, parsep=0pt}
 
 \newcommand{\jobheader}[3]{\textbf{#1} \; \textbar \; #2 \hfill \textit{#3}\par\vspace{1pt}}
 
@@ -222,9 +222,10 @@ My research develops explainable CNN--Transformer hybrid architectures for high-
   \item Built a unified platform consolidating \textbf{16 CNN-based medical imaging classification projects} with \textbf{7 explainable AI methods} (Grad-CAM, Grad-CAM++, Score-CAM, Integrated Gradients, and more) served through a FastAPI dashboard with downloadable PDF reports.
 \end{itemize}
 
-\textbf{Breast Cancer AI Classifier: Advanced FNA Analysis} \;\textbar\;\href{https://github.com/nakib33/Breast-Cancer-Classifier/}{GitHub} \;\textbar\;\textit{XGBoost, Random Forest, Scikit-Learn, FastAPI}
+\textbf{EmotionVision AI: Real-time Facial Emotion Recognition} \;\textbar\;\href{https://github.com/nakib33/EmotionVision-AI.git}{GitHub} \;\textbar\;\textit{PyTorch, OpenCV, Grad-CAM, FastAPI}
 \begin{itemize}
-  \item Trained multiple classifiers on the Wisconsin Breast Cancer dataset (30 FNA features) with threshold tuning to achieve \textbf{98\%+ recall} on malignant cases, minimizing false negatives in a screening context.
+  \item Built a full-stack real-time facial emotion recognition system using a \textbf{custom CNN (1.2M params)} over FER2013 classifying \textbf{7 emotions}, with webcam live inference, image upload, and confidence scores.
+  \item Implemented \textbf{Grad-CAM visualization} from scratch to highlight the facial regions (eyes, mouth, eyebrows) driving each prediction, served via a FastAPI backend with an HTML/CSS/JS frontend.
 \end{itemize}
 
 \textbf{Stock Trend Prediction Using Bangla News Analysis} \;\textbar\;\href{https://github.com/nakib33/Stock-trend-prediction-using-news-analysis}{GitHub} \;\textbar\;\textit{Bangla NLP, Random Forest, FastAPI}
