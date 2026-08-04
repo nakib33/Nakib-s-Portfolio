@@ -19,10 +19,11 @@
 
 \newcommand{\jobheader}[3]{\textbf{#1} \; \textbar \; #2 \hfill \textit{#3}\par\vspace{1pt}}
 
-\newcommand{\pubentry}[4]{%
+\newcommand{\pubentry}[5]{%
   \noindent\textbf{#1}\\[1pt]
   \noindent #2\\[1pt]
-  \noindent\textit{#3} \hfill \textbf{[#4]}\\[4pt]
+  \noindent\textit{#3} \hfill \textbf{[#4]}%
+  \if\relax\detokenize{#5}\relax\else\; \textbar\; \href{#5}{\textbf{Paper Link}}\fi\\[4pt]
 }
 
 \hypersetup{colorlinks=true, urlcolor=blue, linkcolor=blue}
@@ -88,6 +89,7 @@ My research develops explainable CNN--Transformer hybrid architectures for high-
   {Nakib Uddin Ahmed, Azizur Rahman, Mehjabin Ferdous}
   {\href{https://link.springer.com/article/10.1007/s12061-026-09955-4}{Applied Spatial Analysis and Policy, Springer Nature}, 2026}
   {Published}
+  {https://nakib-uddin-ahmed33.netlify.app/papers/AI-Driven\%20Housing\%20Affordability\%20Forecasting.pdf}
 
 \begin{itemize}
   \item Built an explainable AI framework predicting severe housing cost burden across NYC neighbourhoods using socio-economic, housing, and rental market data (2012--2022).
@@ -104,6 +106,7 @@ My research develops explainable CNN--Transformer hybrid architectures for high-
   {Nakib Uddin Ahmed, Azizur Rahman, Mehjabin Ferdous}
   {\href{https://www.researchgate.net/publication/410925705_Beyond_Binary_Four-Class_Risk_Stratification_from_Gastrointestinal_Endoscopy_Using_Asymmetric-Cost_Lightweight_CNN-Transformer_Learning}{Evolutionary Intelligence, Springer}, 2026}
   {Under Review}
+  {https://nakib-uddin-ahmed33.netlify.app/papers/Gastrointestinal\%20Endoscopy.pdf}
 
 \begin{itemize}
   \item Designed a lightweight CNN--Transformer framework for four-class gastrointestinal lesion risk stratification aligned with ACG and ESGE clinical guidelines.
@@ -120,6 +123,7 @@ My research develops explainable CNN--Transformer hybrid architectures for high-
   {Nakib Uddin Ahmed, Azizur Rahman}
   {\href{https://www.ijcaonline.org/archives/volume187/number91/enhancing-online-recruitment-fraud-detection-a-comparative-analysis-of-gradient-boosting-and-transformer-architectures-under-severe-class-imbalance/}{International Journal of Computer Applications}, 2024}
   {Published}
+  {https://nakib-uddin-ahmed33.netlify.app/papers/Enhancing\%20Online\%20Recruitment\%20Fraud\%20Detection.pdf}
 
 \begin{itemize}
   \item Developed an AI-based fraudulent job-posting detection system using Machine Learning, Deep Learning, and Transformer models on \textbf{17,883 job advertisements} with Word2Vec embeddings and SMOTE.
@@ -136,6 +140,7 @@ My research develops explainable CNN--Transformer hybrid architectures for high-
   {Nakib Uddin Ahmed, Azizur Rahman}
   {International Journal of Medical Informatics, Elsevier, 2026}
   {Under Review}
+  {https://nakib-uddin-ahmed33.netlify.app/papers/PolyDetect_Manuscript\%20V1.pdf}
 
 \begin{itemize}
   \item Proposed PolyDetect integrating image quality assessment, adaptive image enhancement, and a hybrid Transformer--CNN architecture for robust colorectal polyp segmentation under image degradation.
@@ -152,6 +157,7 @@ My research develops explainable CNN--Transformer hybrid architectures for high-
   {Nakib Uddin Ahmed}
   {IEEE Xplore, 2026}
   {Accepted}
+  {https://nakib-uddin-ahmed33.netlify.app/papers/IEEE_Conference.pdf}
 
 \begin{itemize}
   \item Developed a soft-voting ensemble framework combining XGBoost and Random Forest for maternal and fetal health risk stratification across multiple clinical datasets.
@@ -168,6 +174,7 @@ My research develops explainable CNN--Transformer hybrid architectures for high-
   {Nakib Uddin Ahmed, Azizur Rahman, Mehjabin Ferdous}
   {Medical \& Biological Engineering \& Computing, Springer, 2026}
   {Under Review}
+  {https://nakib-uddin-ahmed33.netlify.app/papers/Brain_Tumor_Transfer_Learning.pdf}
 
 \begin{itemize}
   \item Evaluated transfer learning for four-class brain tumor MRI classification using EfficientNet-B0 across varying training data sizes, comparing ImageNet-pretrained and randomly initialized models on \textbf{7,200 MRI images}.
