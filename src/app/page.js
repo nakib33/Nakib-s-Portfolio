@@ -260,7 +260,7 @@ const HomePage = () => {
                 <Mail className="w-4 h-4" />
               </a>
               <a
-                href="https://scholar.google.com/citations?user=PLACEHOLDER"
+                href="https://scholar.google.com/citations?hl=en&user=NYlbPAwAAAAJ"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center w-10 h-10 rounded-full bg-gray-800 text-white hover:bg-blue-700 transition-colors"

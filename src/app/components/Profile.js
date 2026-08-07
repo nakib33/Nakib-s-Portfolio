@@ -14,7 +14,7 @@ const Profile = () => {
         { icon: <Linkedin className="w-4 h-4" />, label: 'LinkedIn', link: 'https://www.linkedin.com/in/nakib33/' },
         { icon: <Github className="w-4 h-4" />, label: 'GitHub', link: 'https://github.com/nakib33' },
         { icon: <Instagram className="w-4 h-4" />, label: 'Instagram', link: 'https://www.instagram.com/_nakiib_/' },
-        { icon: <GraduationCap className="w-4 h-4" />, label: 'Scholar', link: 'https://scholar.google.com/citations?user=PLACEHOLDER' },
+        { icon: <GraduationCap className="w-4 h-4" />, label: 'Scholar', link: 'https://scholar.google.com/citations?hl=en&user=NYlbPAwAAAAJ' },
     ];
 
     return (
